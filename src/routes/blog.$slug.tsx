@@ -51,7 +51,7 @@ function NotFound() {
 }
 
 function ArticlePage() {
-  const article = Route.useLoaderData();
+  const article = Route.useLoaderData() as Article;
   const related = articles.filter((a) => a.slug !== article.slug).slice(0, 3);
   return (
     <PageShell>
