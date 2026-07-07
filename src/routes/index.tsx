@@ -456,7 +456,7 @@ function Testimonials() {
 /* -------------------------------- FAQ ----------------------------------- */
 export const faqItems = [
   { q: "Combien de temps dure la numérisation ?", a: "Comptez en moyenne 10 jours ouvrés à partir de la réception de vos bobines. Les commandes importantes ou nécessitant beaucoup de restauration peuvent demander plus de temps — nous vous donnons toujours un délai précis avec le devis." },
-  { q: "Mes bobines sont-elles en sécurité ?", a: "Absolument. Elles ne sont jamais projetées, uniquement scannées image par image. Elles vous sont rendues dans des boîtes neuves, étiquetées, avec vos originaux intacts." },
+  { q: "Mes bobines sont-elles en sécurité ?", a: "Dans un espace de travail dédié. Chaque bobine est numérotée à l'arrivée, inspectée, nettoyée si besoin, puis stockée à l'abri en attendant sa numérisation." },
   { q: "Quelle est la qualité finale ?", a: "Nous livrons en HD 1080p (Full HD) par défaut. Un master haute qualité (ProRes) est disponible sur demande pour les projets d'archivage professionnels." },
   { q: "Sur quel support recevrai-je mes films ?", a: "Au choix : clé USB gravée à votre nom, ou lien de téléchargement sécurisé valable 30 jours. Vous pouvez aussi opter pour un DVD sur demande." },
   { q: "Et si mes bobines sont vraiment abîmées ?", a: "Nous inspectons chaque bobine avant de commencer. Si une restauration lourde est nécessaire, nous vous prévenons et vous devisons l'opération. Nous ne travaillons jamais sans votre accord." },
