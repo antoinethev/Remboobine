@@ -4,8 +4,6 @@ import { Header, Footer } from "@/components/site-chrome";
 import heroFamily from "@/assets/hero-family.jpg";
 import reelsMacro from "@/assets/reels-macro.jpg";
 import workspace from "@/assets/workspace.jpg";
-import beforeScan from "@/assets/before-scan.jpg";
-import afterScan from "@/assets/after-scan.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
