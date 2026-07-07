@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageShell, Breadcrumbs } from "@/components/site-chrome";
-import { articles, getArticle } from "@/lib/articles";
+import { articles, getArticle, type Article } from "@/lib/articles";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
