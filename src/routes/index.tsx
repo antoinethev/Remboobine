@@ -197,53 +197,36 @@ function WhyDigitize() {
   );
 }
 
-/* --------------------------- BEFORE / AFTER ----------------------------- */
-function BeforeAfter() {
-  const [pos, setPos] = useState(50);
+/* --------------------------- APPROACH ----------------------------------- */
+function Approach() {
   return (
     <section className="relative bg-primary text-cream">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 md:grid-cols-2">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral-soft">Avant / après</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral-soft">Notre approche</p>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            La même image. Cinquante ans plus tard.
+            Un rendu honnête, un travail soigné.
           </h2>
           <p className="mt-5 text-lg text-cream/80">
-            Nous nettoyons chaque bobine, stabilisons l'image, corrigeons les couleurs et
-            préservons ce grain si particulier — la signature du Super 8. Le résultat parle de lui-même.
+            Nous ne vendons pas de miracles. Nous numérisons vos bobines Super 8 et 8 mm en <strong className="text-cream">1080p Full HD</strong>,
+            image par image, avec un scanner dédié — jamais par projection. Le grain du Super 8 est préservé,
+            les couleurs sont retravaillées avec mesure, et le résultat reste fidèle à vos films d'origine.
           </p>
           <ul className="mt-8 space-y-3 text-sm text-cream/80">
-            <li className="flex gap-3"><span className="text-coral">→</span> Capteur haute définition, image par image</li>
+            <li className="flex gap-3"><span className="text-coral">→</span> Numérisation image par image en 1080p Full HD</li>
+            <li className="flex gap-3"><span className="text-coral">→</span> Scanner dédié Super 8 et 8 mm — aucune projection</li>
             <li className="flex gap-3"><span className="text-coral">→</span> Nettoyage manuel des bobines fragiles</li>
-            <li className="flex gap-3"><span className="text-coral">→</span> Étalonnage et stabilisation professionnels</li>
-            <li className="flex gap-3"><span className="text-coral">→</span> Fichier .mp4 universel + master haute qualité</li>
+            <li className="flex gap-3"><span className="text-coral">→</span> Fichier .mp4 universel, prêt à partager ou archiver</li>
           </ul>
         </div>
-        <div
-          className="relative aspect-[4/3] w-full select-none overflow-hidden rounded-2xl border-[6px] border-cream shadow-[var(--shadow-lift)]"
-          onMouseMove={(e) => {
-            const rect = e.currentTarget.getBoundingClientRect();
-            setPos(((e.clientX - rect.left) / rect.width) * 100);
-          }}
-          onTouchMove={(e) => {
-            const rect = e.currentTarget.getBoundingClientRect();
-            setPos(((e.touches[0].clientX - rect.left) / rect.width) * 100);
-          }}
-        >
-          <img src={afterScan} alt="Après numérisation et restauration" width={1200} height={912} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 overflow-hidden" style={{ width: `${pos}%` }}>
-            <img src={beforeScan} alt="Avant numérisation, film abîmé" width={1200} height={912} className="h-full w-full object-cover" style={{ width: `${100 / (pos / 100)}%` }} loading="lazy" />
+        <div className="relative">
+          <div className="overflow-hidden rounded-2xl border-[6px] border-cream shadow-[var(--shadow-lift)]">
+            <img src={workspace} alt="Espace de numérisation Remboobine" width={1600} height={1008} className="h-full w-full object-cover" loading="lazy" />
           </div>
-          <div
-            className="absolute inset-y-0 z-10 flex w-1 items-center justify-center bg-cream"
-            style={{ left: `calc(${pos}% - 2px)` }}
-          >
-            <div className="grid h-10 w-10 place-items-center rounded-full border-2 border-cream bg-primary text-cream shadow-lg">
-              <span className="text-xs">‹›</span>
-            </div>
+          <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-cream px-5 py-4 text-primary shadow-lg md:block">
+            <p className="font-display text-2xl">1080p</p>
+            <p className="text-xs uppercase tracking-widest text-primary/60">Full HD — image par image</p>
           </div>
-          <span className="absolute left-3 top-3 rounded-full bg-black/40 px-3 py-1 text-[10px] uppercase tracking-widest">Avant</span>
-          <span className="absolute right-3 top-3 rounded-full bg-coral/90 px-3 py-1 text-[10px] uppercase tracking-widest">Après</span>
         </div>
       </div>
     </section>
