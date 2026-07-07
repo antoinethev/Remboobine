@@ -4,8 +4,6 @@ import { Header, Footer } from "@/components/site-chrome";
 import heroFamily from "@/assets/hero-family.jpg";
 import reelsMacro from "@/assets/reels-macro.jpg";
 import workspace from "@/assets/workspace.jpg";
-import beforeScan from "@/assets/before-scan.jpg";
-import afterScan from "@/assets/after-scan.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -50,7 +48,7 @@ function HomePage() {
         <Hero />
         <TrustStrip />
         <WhyDigitize />
-        <BeforeAfter />
+        <Approach />
         <Process />
         <Benefits />
         <Pricing />
@@ -199,53 +197,36 @@ function WhyDigitize() {
   );
 }
 
-/* --------------------------- BEFORE / AFTER ----------------------------- */
-function BeforeAfter() {
-  const [pos, setPos] = useState(50);
+/* --------------------------- APPROACH ----------------------------------- */
+function Approach() {
   return (
     <section className="relative bg-primary text-cream">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 md:grid-cols-2">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral-soft">Avant / après</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral-soft">Notre approche</p>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            La même image. Cinquante ans plus tard.
+            Un rendu honnête, un travail soigné.
           </h2>
           <p className="mt-5 text-lg text-cream/80">
-            Nous nettoyons chaque bobine, stabilisons l'image, corrigeons les couleurs et
-            préservons ce grain si particulier — la signature du Super 8. Le résultat parle de lui-même.
+            Nous ne vendons pas de miracles. Nous numérisons vos bobines Super 8 et 8 mm en <strong className="text-cream">1080p Full HD</strong>,
+            image par image, avec un scanner dédié — jamais par projection. Le grain du Super 8 est préservé,
+            les couleurs sont retravaillées avec mesure, et le résultat reste fidèle à vos films d'origine.
           </p>
           <ul className="mt-8 space-y-3 text-sm text-cream/80">
-            <li className="flex gap-3"><span className="text-coral">→</span> Capteur haute définition, image par image</li>
+            <li className="flex gap-3"><span className="text-coral">→</span> Numérisation image par image en 1080p Full HD</li>
+            <li className="flex gap-3"><span className="text-coral">→</span> Scanner dédié Super 8 et 8 mm — aucune projection</li>
             <li className="flex gap-3"><span className="text-coral">→</span> Nettoyage manuel des bobines fragiles</li>
-            <li className="flex gap-3"><span className="text-coral">→</span> Étalonnage et stabilisation professionnels</li>
-            <li className="flex gap-3"><span className="text-coral">→</span> Fichier .mp4 universel + master haute qualité</li>
+            <li className="flex gap-3"><span className="text-coral">→</span> Fichier .mp4 universel, prêt à partager ou archiver</li>
           </ul>
         </div>
-        <div
-          className="relative aspect-[4/3] w-full select-none overflow-hidden rounded-2xl border-[6px] border-cream shadow-[var(--shadow-lift)]"
-          onMouseMove={(e) => {
-            const rect = e.currentTarget.getBoundingClientRect();
-            setPos(((e.clientX - rect.left) / rect.width) * 100);
-          }}
-          onTouchMove={(e) => {
-            const rect = e.currentTarget.getBoundingClientRect();
-            setPos(((e.touches[0].clientX - rect.left) / rect.width) * 100);
-          }}
-        >
-          <img src={afterScan} alt="Après numérisation et restauration" width={1200} height={912} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 overflow-hidden" style={{ width: `${pos}%` }}>
-            <img src={beforeScan} alt="Avant numérisation, film abîmé" width={1200} height={912} className="h-full w-full object-cover" style={{ width: `${100 / (pos / 100)}%` }} loading="lazy" />
+        <div className="relative">
+          <div className="overflow-hidden rounded-2xl border-[6px] border-cream shadow-[var(--shadow-lift)]">
+            <img src={workspace} alt="Espace de numérisation Remboobine" width={1600} height={1008} className="h-full w-full object-cover" loading="lazy" />
           </div>
-          <div
-            className="absolute inset-y-0 z-10 flex w-1 items-center justify-center bg-cream"
-            style={{ left: `calc(${pos}% - 2px)` }}
-          >
-            <div className="grid h-10 w-10 place-items-center rounded-full border-2 border-cream bg-primary text-cream shadow-lg">
-              <span className="text-xs">‹›</span>
-            </div>
+          <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-cream px-5 py-4 text-primary shadow-lg md:block">
+            <p className="font-display text-2xl">1080p</p>
+            <p className="text-xs uppercase tracking-widest text-primary/60">Full HD — image par image</p>
           </div>
-          <span className="absolute left-3 top-3 rounded-full bg-black/40 px-3 py-1 text-[10px] uppercase tracking-widest">Avant</span>
-          <span className="absolute right-3 top-3 rounded-full bg-coral/90 px-3 py-1 text-[10px] uppercase tracking-widest">Après</span>
         </div>
       </div>
     </section>
@@ -256,9 +237,9 @@ function BeforeAfter() {
 function Process() {
   const steps = [
     { t: "Prise de contact", d: "Vous nous décrivez votre projet (nombre de bobines, format, état). Devis gratuit sous 24h." },
-    { t: "Réception des bobines", d: "Remise en mains propres si possible, sinon envoi suivi et assuré. Chaque bobine est numérotée." },
+    { t: "Réception des bobines", d: "Remise en mains propres si possible, sinon envoi suivi (Colissimo, Mondial Relay…). Chaque bobine est numérotée." },
     { t: "Inspection & nettoyage", d: "Nous inspectons chaque bobine, réparons les collures fragiles et dépoussiérons délicatement." },
-    { t: "Numérisation image par image", d: "Capture haute définition, image par image, sur banc professionnel. Aucune projection destructrice." },
+    { t: "Numérisation image par image", d: "Capture image par image en 1080p Full HD sur scanner dédié Super 8 / 8 mm. Aucune projection destructrice." },
     { t: "Restauration & étalonnage", d: "Stabilisation, correction colorimétrique douce, respect du grain d'origine." },
     { t: "Montage & titres", d: "Regroupement par bobine, insertion d'un titre daté si vous le souhaitez, export en formats universels." },
     { t: "Livraison", d: "Fichier(s) sur clé USB gravée ou lien de téléchargement sécurisé, avec vos bobines originales rendues intactes." },
@@ -299,9 +280,9 @@ function Process() {
 function Benefits() {
   const items = [
     { t: "Manipulation artisanale", d: "Gants coton, nettoyage manuel, aucune bobine traitée à la chaîne." },
-    { t: "Qualité cinéma", d: "Banc image par image, HD 1080p, master haute qualité archivable." },
+    { t: "Numérisation 1080p", d: "Scanner dédié Super 8 & 8 mm, capture image par image en 1080p Full HD." },
     { t: "Aucune projection", d: "Nous ne projetons jamais vos films : votre bobine ne subit aucune usure." },
-    { t: "Livraison flexible", d: "Clé USB gravée, lien sécurisé, format .mp4 universel + master pro sur demande." },
+    { t: "Livraison flexible", d: "Clé USB gravée, lien de téléchargement sécurisé, fichier .mp4 universel." },
     { t: "Vos originaux préservés", d: "Bobines rendues dans des boîtes neuves, étiquetées et prêtes à archiver." },
     { t: "Confidentialité totale", d: "Vos images n'appartiennent qu'à vous. Aucune diffusion, aucune sauvegarde permanente sans accord." },
   ];
@@ -346,7 +327,7 @@ function Pricing() {
       desc: "La formule la plus choisie, pour tout un carton de souvenirs.",
       features: [
         "4 à 15 bobines",
-        "HD 1080p + master pro",
+        "HD 1080p Full HD",
         "Nettoyage & étalonnage inclus",
         "Clé USB gravée offerte",
         "Titres datés par bobine",
@@ -457,10 +438,10 @@ function Testimonials() {
 export const faqItems = [
   { q: "Combien de temps dure la numérisation ?", a: "Comptez en moyenne 10 jours ouvrés à partir de la réception de vos bobines. Les commandes importantes ou nécessitant beaucoup de restauration peuvent demander plus de temps — nous vous donnons toujours un délai précis avec le devis." },
   { q: "Mes bobines sont-elles en sécurité ?", a: "Dans un espace de travail dédié. Chaque bobine est numérotée à l'arrivée, inspectée, nettoyée si besoin, puis stockée à l'abri en attendant sa numérisation." },
-  { q: "Quelle est la qualité finale ?", a: "Nous livrons en HD 1080p (Full HD) par défaut. Un master haute qualité (ProRes) est disponible sur demande pour les projets d'archivage professionnels." },
+  { q: "Quelle est la qualité finale ?", a: "Nous livrons en 1080p Full HD (fichier .mp4 universel), en numérisation image par image. C'est la qualité standard pour visionner vos films sur TV, tablette et ordinateur, et pour les partager avec la famille." },
   { q: "Sur quel support recevrai-je mes films ?", a: "Au choix : clé USB gravée à votre nom, ou lien de téléchargement sécurisé valable 30 jours. Vous pouvez aussi opter pour un DVD sur demande." },
   { q: "Et si mes bobines sont vraiment abîmées ?", a: "Nous inspectons chaque bobine avant de commencer. Si une restauration lourde est nécessaire, nous vous prévenons et vous devisons l'opération. Nous ne travaillons jamais sans votre accord." },
-  { q: "Puis-je vous rencontrer ?", a: "Oui, l'échange en mains propres est possible et souvent apprécié. Contactez-nous pour convenir d'un rendez-vous. Sinon, l'envoi suivi et assuré est parfaitement sécurisé." },
+  { q: "Puis-je vous rencontrer ?", a: "Oui, l'échange en mains propres est possible et souvent apprécié. Contactez-nous pour convenir d'un rendez-vous. Sinon, l'envoi en suivi (Colissimo ou Mondial Relay) fonctionne très bien — pensez à conserver votre numéro de suivi." },
 ];
 
 function FaqPreview() {

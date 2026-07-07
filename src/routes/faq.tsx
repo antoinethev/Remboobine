@@ -7,7 +7,7 @@ const items = [
   { q: "Combien de temps dure la numérisation ?", a: "10 jours ouvrés en moyenne, à partir de la réception de vos bobines. Un délai précis vous est donné dans le devis." },
   { q: "Comment sont manipulées mes bobines ?", a: "Avec gants coton, dans un espace de travail dédié. Chaque bobine est numérotée à l'arrivée, inspectée, nettoyée si besoin, puis stockée à l'abri en attendant sa numérisation." },
   { q: "Projetez-vous mes films ?", a: "Jamais. La projection use la bobine et peut même la rayer. Nous utilisons un banc image par image : la pellicule défile lentement devant un capteur haute définition, sans friction." },
-  { q: "Quelle résolution finale ?", a: "HD 1080p (Full HD) par défaut, en fichier .mp4 universel. Sur demande, master ProRes 422 haute qualité, idéal pour l'archivage professionnel." },
+  { q: "Quelle résolution finale ?", a: "1080p Full HD, en fichier .mp4 universel. Idéal pour visionner sur TV, tablette et ordinateur, et pour partager avec la famille." },
   { q: "Corrigez-vous les couleurs ?", a: "Oui, un étalonnage doux est inclus. Nous respectons l'esprit d'origine — le grain Super 8 reste, les couleurs redeviennent justes." },
   { q: "Et si mes films sont sonores ?", a: "Le son magnétique des Super 8 sonores est numérisé en synchro avec l'image, sans traitement destructif." },
   { q: "Que se passe-t-il si une bobine est trop abîmée ?", a: "Nous vous prévenons immédiatement, avec photos à l'appui. Aucune restauration lourde n'est engagée sans votre accord écrit." },

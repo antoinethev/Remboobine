@@ -18,9 +18,9 @@ export const Route = createFileRoute("/processus")({
 
 const steps = [
   { t: "Prise de contact", d: "Vous nous décrivez votre archive : nombre de bobines, format supposé, état général. Nous vous répondons sous 24h avec un devis clair et gratuit." },
-  { t: "Réception des bobines", d: "En mains propres sur rendez-vous, ou par envoi suivi et assuré. Chaque bobine reçoit un numéro unique et une fiche d'inspection." },
+  { t: "Réception des bobines", d: "En mains propres sur rendez-vous, ou par envoi suivi (Colissimo, Mondial Relay…). Chaque bobine reçoit un numéro unique et une fiche d'inspection." },
   { t: "Inspection & nettoyage", d: "Inspection visuelle sous loupe, réparation des collures fragiles, dépoussiérage doux. Les films atteints de syndrome du vinaigre sont isolés et traités en priorité." },
-  { t: "Numérisation image par image", d: "Passage sur banc professionnel : chaque image est capturée individuellement en haute définition. Aucune projection, aucun contact abrasif." },
+  { t: "Numérisation image par image", d: "Passage sur scanner dédié Super 8 / 8 mm : chaque image est capturée individuellement en 1080p Full HD. Aucune projection, aucun contact abrasif." },
   { t: "Restauration & étalonnage", d: "Stabilisation numérique, correction colorimétrique douce, respect du grain d'origine. Le film retrouve ses couleurs sans perdre son âme." },
   { t: "Montage & titres", d: "Regroupement par bobine, insertion d'un titre daté à votre demande, export en formats universels. Vous validez avant livraison." },
   { t: "Livraison", d: "Fichier(s) sur clé USB gravée à votre nom ou lien sécurisé. Vos bobines originales vous sont rendues, étiquetées et rangées." },

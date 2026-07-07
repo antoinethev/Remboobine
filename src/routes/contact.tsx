@@ -41,7 +41,7 @@ function ContactPage() {
           </div>
           <div className="mt-10 rounded-2xl border border-primary/10 bg-cream/70 p-6 text-sm text-primary/70">
             <p className="font-semibold text-primary">Envoi ou remise en mains propres ?</p>
-            <p className="mt-2">Les deux sont possibles. Pour un envoi, nous vous conseillons Colissimo Suivi ou Chronopost assuré. Nous confirmons la réception dès l'ouverture du colis.</p>
+            <p className="mt-2">Les deux sont possibles. Pour un envoi, un service suivi type Colissimo ou Mondial Relay convient parfaitement — pensez à conserver votre numéro de suivi. Nous confirmons la réception dès l'ouverture du colis.</p>
           </div>
         </div>
         <div className="rounded-3xl border border-primary/10 bg-primary p-8 text-cream shadow-[var(--shadow-lift)]">
