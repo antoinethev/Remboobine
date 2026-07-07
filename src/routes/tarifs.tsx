@@ -22,10 +22,9 @@ const plans = [
 ];
 
 const supplements = [
-  { name: "Master ProRes 422 HQ", price: "+ 12€ / bobine" },
   { name: "Bobine très abîmée (nettoyage lourd)", price: "sur devis" },
   { name: "Titrage personnalisé et chapitrage", price: "+ 25€ / heure de rendu" },
-  { name: "Envoi retour recommandé assuré", price: "18€" },
+  { name: "Envoi retour en suivi (Colissimo)", price: "12€" },
 ];
 
 function TarifsPage() {
