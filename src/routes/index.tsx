@@ -48,7 +48,7 @@ function HomePage() {
         <Hero />
         <TrustStrip />
         <WhyDigitize />
-        <BeforeAfter />
+        <Approach />
         <Process />
         <Benefits />
         <Pricing />
