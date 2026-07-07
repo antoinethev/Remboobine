@@ -280,9 +280,9 @@ function Process() {
 function Benefits() {
   const items = [
     { t: "Manipulation artisanale", d: "Gants coton, nettoyage manuel, aucune bobine traitée à la chaîne." },
-    { t: "Qualité cinéma", d: "Banc image par image, HD 1080p, master haute qualité archivable." },
+    { t: "Numérisation 1080p", d: "Scanner dédié Super 8 & 8 mm, capture image par image en 1080p Full HD." },
     { t: "Aucune projection", d: "Nous ne projetons jamais vos films : votre bobine ne subit aucune usure." },
-    { t: "Livraison flexible", d: "Clé USB gravée, lien sécurisé, format .mp4 universel + master pro sur demande." },
+    { t: "Livraison flexible", d: "Clé USB gravée, lien de téléchargement sécurisé, fichier .mp4 universel." },
     { t: "Vos originaux préservés", d: "Bobines rendues dans des boîtes neuves, étiquetées et prêtes à archiver." },
     { t: "Confidentialité totale", d: "Vos images n'appartiennent qu'à vous. Aucune diffusion, aucune sauvegarde permanente sans accord." },
   ];
