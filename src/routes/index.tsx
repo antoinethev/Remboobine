@@ -327,7 +327,7 @@ function Pricing() {
       desc: "La formule la plus choisie, pour tout un carton de souvenirs.",
       features: [
         "4 à 15 bobines",
-        "HD 1080p + master pro",
+        "HD 1080p Full HD",
         "Nettoyage & étalonnage inclus",
         "Clé USB gravée offerte",
         "Titres datés par bobine",
