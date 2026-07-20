@@ -440,7 +440,7 @@ export const faqItems = [
   { q: "Combien de temps dure la numérisation ?", a: "Comptez en moyenne 10 jours ouvrés à partir de la réception de vos bobines. Les commandes importantes ou nécessitant beaucoup de restauration peuvent demander plus de temps — nous vous donnons toujours un délai précis avec le devis." },
   { q: "Mes bobines sont-elles en sécurité ?", a: "Dans un espace de travail dédié. Chaque bobine est numérotée à l'arrivée, inspectée, nettoyée si besoin, puis stockée à l'abri en attendant sa numérisation." },
   { q: "Quelle est la qualité finale ?", a: "Nous livrons en 1080p Full HD (fichier .mp4 universel), en numérisation image par image. C'est la qualité standard pour visionner vos films sur TV, tablette et ordinateur, et pour les partager avec la famille." },
-  { q: "Sur quel support recevrai-je mes films ?", a: "Au choix : clé USB gravée à votre nom, ou lien de téléchargement sécurisé valable 30 jours. Vous pouvez aussi opter pour un DVD sur demande." },
+  { q: "Sur quel support recevrai-je mes films ?", a: "Par défaut, un lien de téléchargement sécurisé valable 30 jours — pratique et immédiat. Sur demande, vous pouvez aussi recevoir vos fichiers sur clé USB en option." },
   { q: "Et si mes bobines sont vraiment abîmées ?", a: "Nous inspectons chaque bobine avant de commencer. Si une restauration lourde est nécessaire, nous vous prévenons et vous devisons l'opération. Nous ne travaillons jamais sans votre accord." },
   { q: "Puis-je vous rencontrer ?", a: "Oui, l'échange en mains propres est possible et souvent apprécié. Contactez-nous pour convenir d'un rendez-vous. Sinon, l'envoi en suivi (Colissimo ou Mondial Relay) fonctionne très bien — pensez à conserver votre numéro de suivi." },
 ];
