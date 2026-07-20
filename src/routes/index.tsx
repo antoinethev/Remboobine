@@ -551,7 +551,19 @@ export function ContactForm() {
             <Field label="Nom" name="nom" />
           </div>
           <Field label="Email" name="email" type="email" />
-          <Field label="Téléphone (optionnel)" name="tel" type="tel" />
+          <Field label="Téléphone" name="tel" type="tel" />
+          <div>
+            <label className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
+              Taille des bobines
+            </label>
+            <select className="w-full rounded-lg border border-cream/20 bg-transparent px-4 py-3 text-cream focus:border-coral focus:outline-none">
+              <option className="bg-primary">Petites (7,5 cm / ~15 m)</option>
+              <option className="bg-primary">Moyennes (12 cm / ~60 m)</option>
+              <option className="bg-primary">Grandes (18 cm / ~120 m)</option>
+              <option className="bg-primary">Mélange de tailles</option>
+              <option className="bg-primary">Je ne sais pas encore</option>
+            </select>
+          </div>
           <div>
             <label className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
               Nombre approximatif de bobines
