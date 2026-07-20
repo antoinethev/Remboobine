@@ -22,7 +22,7 @@ const plans = [
 ];
 
 const supplements = [
-  { name: "Bobine très abîmée (nettoyage lourd)", price: "sur devis" },
+  { name: "Bobine très abîmée (réparations multiples de collures)", price: "sur devis" },
   { name: "Titrage personnalisé et chapitrage", price: "+ 25€ / heure de rendu" },
   { name: "Envoi retour en suivi (Colissimo)", price: "12€" },
 ];
