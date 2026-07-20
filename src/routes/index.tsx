@@ -236,13 +236,13 @@ function Approach() {
 /* ------------------------------ PROCESS --------------------------------- */
 function Process() {
   const steps = [
-    { t: "Prise de contact", d: "Vous nous décrivez votre projet (nombre de bobines, format, état). Devis gratuit sous 24h." },
+    { t: "Prise de contact", d: "Vous nous décrivez votre projet (nombre de bobines, taille des bobines, format, état). Devis gratuit sous 24h." },
     { t: "Réception des bobines", d: "Remise en mains propres si possible, sinon envoi suivi (Colissimo, Mondial Relay…). Chaque bobine est numérotée." },
-    { t: "Inspection & nettoyage", d: "Nous inspectons chaque bobine, réparons les collures fragiles et dépoussiérons délicatement." },
+    { t: "Inspection", d: "Nous inspectons chaque bobine et réparons les collures fragiles avant la numérisation." },
     { t: "Numérisation image par image", d: "Capture image par image en 1080p Full HD sur scanner dédié Super 8 / 8 mm. Aucune projection destructrice." },
     { t: "Restauration & étalonnage", d: "Stabilisation, correction colorimétrique douce, respect du grain d'origine." },
     { t: "Montage & titres", d: "Regroupement par bobine, insertion d'un titre daté si vous le souhaitez, export en formats universels." },
-    { t: "Livraison", d: "Fichier(s) sur clé USB gravée ou lien de téléchargement sécurisé, avec vos bobines originales rendues intactes." },
+    { t: "Livraison", d: "Lien de téléchargement sécurisé par défaut, ou clé USB en option. Vos bobines originales vous sont rendues, étiquetées." },
   ];
   return (
     <section id="processus" className="mx-auto max-w-7xl px-6 py-24">
