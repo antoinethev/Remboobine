@@ -279,11 +279,11 @@ function Process() {
 /* ------------------------------ BENEFITS -------------------------------- */
 function Benefits() {
   const items = [
-    { t: "Manipulation artisanale", d: "Gants coton, nettoyage manuel, aucune bobine traitée à la chaîne." },
+    { t: "Manipulation artisanale", d: "Chaque bobine est manipulée avec soin, jamais traitée à la chaîne." },
     { t: "Numérisation 1080p", d: "Scanner dédié Super 8 & 8 mm, capture image par image en 1080p Full HD." },
     { t: "Aucune projection", d: "Nous ne projetons jamais vos films : votre bobine ne subit aucune usure." },
-    { t: "Livraison flexible", d: "Clé USB gravée, lien de téléchargement sécurisé, fichier .mp4 universel." },
-    { t: "Vos originaux préservés", d: "Bobines rendues dans des boîtes neuves, étiquetées et prêtes à archiver." },
+    { t: "Livraison flexible", d: "Lien de téléchargement sécurisé par défaut, clé USB en option, fichier .mp4 universel." },
+    { t: "Vos originaux préservés", d: "Bobines rendues étiquetées, prêtes à être rangées avec vos archives." },
     { t: "Confidentialité totale", d: "Vos images n'appartiennent qu'à vous. Aucune diffusion, aucune sauvegarde permanente sans accord." },
   ];
   return (
