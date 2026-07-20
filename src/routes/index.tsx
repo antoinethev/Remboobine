@@ -124,11 +124,6 @@ function Hero() {
             <div className="grain pointer-events-none absolute inset-0 flicker" />
             <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-primary/10" />
           </div>
-          <div className="absolute -bottom-8 -left-8 hidden h-40 w-40 rounded-full bg-mist/80 p-3 shadow-lg md:block">
-            <div className="reel-spin flex h-full w-full items-center justify-center rounded-full border-[6px] border-primary/70 bg-mist">
-              <div className="h-3 w-3 rounded-full bg-primary" />
-            </div>
-          </div>
           <div className="absolute -right-4 -top-4 hidden rounded-2xl bg-cream/90 px-4 py-3 text-xs shadow-lg backdrop-blur md:block">
             <p className="font-display text-lg text-primary">« Retrouver la voix de papa. »</p>
             <p className="mt-1 text-primary/60">— Camille, Lyon</p>
