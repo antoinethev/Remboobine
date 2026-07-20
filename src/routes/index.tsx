@@ -251,7 +251,6 @@ function Process() {
         <img src={workspace} alt="Espace de travail de numérisation Super 8" width={1600} height={1008} className="hidden h-40 w-72 rounded-2xl object-cover md:block" loading="lazy" />
       </div>
       <ol className="relative space-y-4">
-        <div aria-hidden className="absolute left-6 top-2 hidden h-[calc(100%-1rem)] w-px bg-primary/15 md:block" />
         {steps.map((s, i) => (
           <li
             key={s.t}
