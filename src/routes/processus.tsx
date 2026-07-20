@@ -6,7 +6,7 @@ export const Route = createFileRoute("/processus")({
   head: () => ({
     meta: [
       { title: "Notre processus de numérisation Super 8 & 8 mm — Remboobine" },
-      { name: "description", content: "Découvrez notre processus artisanal en 7 étapes : inspection, nettoyage, numérisation image par image en HD, restauration et livraison sur clé USB." },
+      { name: "description", content: "Découvrez notre processus artisanal en 7 étapes : inspection, numérisation image par image en HD, restauration et livraison par lien de téléchargement sécurisé." },
       { property: "og:title", content: "Notre processus de numérisation — Remboobine" },
       { property: "og:description", content: "Un processus artisanal en 7 étapes pour préserver vos films Super 8 et 8 mm." },
       { property: "og:url", content: "/processus" },
