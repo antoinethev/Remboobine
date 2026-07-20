@@ -118,9 +118,9 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "Éloigner de tout appareil électronique",
+        heading: "Éloigner de l'humidité et des sources de chaleur",
         body: [
-          "Les champs magnétiques (téléviseur, enceintes, disque dur) peuvent affecter la bande son magnétique de certains Super 8. Gardez une distance de sécurité.",
+          "L'humidité favorise le syndrome du vinaigre et les moisissures. Un endroit sec, à température stable (autour de 18 °C), est idéal.",
         ],
       },
       {
