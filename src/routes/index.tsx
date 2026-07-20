@@ -317,7 +317,7 @@ function Pricing() {
       price: "à partir de 29€",
       per: "/ bobine",
       desc: "Pour tester avant de confier toute votre archive.",
-      features: ["1 à 3 bobines", "HD 1080p", "Fichier .mp4", "Livraison numérique"],
+      features: ["1 à 3 bobines", "HD 1080p", "Fichier .mp4", "Lien de téléchargement sécurisé"],
       highlight: false,
     },
     {
@@ -328,8 +328,9 @@ function Pricing() {
       features: [
         "4 à 15 bobines",
         "HD 1080p Full HD",
-        "Nettoyage & étalonnage inclus",
-        "Clé USB gravée offerte",
+        "Étalonnage inclus",
+        "Lien de téléchargement sécurisé",
+        "Clé USB en option",
         "Titres datés par bobine",
       ],
       highlight: true,
