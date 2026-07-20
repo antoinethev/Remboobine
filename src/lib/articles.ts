@@ -49,7 +49,7 @@ export const articles: Article[] = [
   {
     slug: "difference-super-8-8mm",
     title: "Super 8 ou 8 mm : quelle différence, comment les reconnaître ?",
-    description: "Format, sonorisation, qualité d'image : tout ce qu'il faut savoir pour identifier vos bobines familiales avant numérisation.",
+    description: "Format, perforations, qualité d'image : tout ce qu'il faut savoir pour identifier vos bobines familiales avant numérisation.",
     readingTime: "5 min",
     category: "Formats",
     intro: "Vous avez retrouvé une pile de bobines dans un carton et vous ne savez pas ce que c'est. Rassurez-vous : les distinguer est plus simple qu'il n'y paraît.",
