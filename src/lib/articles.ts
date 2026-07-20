@@ -34,7 +34,7 @@ export const articles: Article[] = [
       {
         heading: "Manipuler avec précaution",
         body: [
-          "Toujours avec des gants coton ou des mains parfaitement propres. Le gras des doigts marque le film et attire la poussière.",
+          "Avec des mains parfaitement propres. Le gras des doigts marque le film et attire la poussière.",
           "Ne rembobinez jamais un film sec ou cassant sans l'avoir inspecté d'abord. Un film abîmé mérite un passage chez un professionnel.",
         ],
       },
