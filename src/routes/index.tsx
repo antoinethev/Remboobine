@@ -509,7 +509,7 @@ function ContactCTA() {
             Prêt à faire revivre vos souvenirs ?
           </h2>
           <p className="mt-5 text-lg text-cream/80">
-            Envoyez-nous un mot avec le nombre approximatif de bobines et leur format si vous le connaissez.
+            Envoyez-nous un mot avec le nombre approximatif de bobines, leur taille et leur format si vous les connaissez.
             Nous vous répondons sous 24h avec un devis clair et sans engagement.
           </p>
           <div className="mt-10 space-y-4 text-lg">
