@@ -3,9 +3,13 @@ import type { ReactNode } from "react";
 
 export function BrandLogo({ className = "" }: { className?: string }) {
   return (
-    <Link to="/" className={`inline-flex items-center gap-2 font-display text-2xl font-bold text-primary ${className}`}>
+    <Link
+      to="/"
+      aria-label="Remboobine"
+      className={`inline-flex items-baseline font-display text-2xl font-bold tracking-tight text-primary ${className}`}
+    >
       <span>Remb</span>
-      <span aria-hidden className="inline-block h-6 w-6 rounded-full border-[3px] border-primary" />
+      <span aria-hidden className="mx-0.5 text-coral">∞</span>
       <span>bine</span>
     </Link>
   );

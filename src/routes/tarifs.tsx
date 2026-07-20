@@ -16,13 +16,13 @@ export const Route = createFileRoute("/tarifs")({
 });
 
 const plans = [
-  { name: "Découverte", price: "29€", per: "/ bobine", desc: "Pour tester avant de confier toute votre archive.", features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Livraison numérique par lien sécurisé", "Nettoyage léger inclus"], highlight: false },
-  { name: "Famille", price: "22€", per: "/ bobine", desc: "La formule la plus choisie.", features: ["4 à 15 bobines", "1080p Full HD", "Nettoyage & étalonnage inclus", "Clé USB gravée offerte", "Titres datés par bobine", "Réponse prioritaire sous 12h"], highlight: true },
-  { name: "Patrimoine", price: "sur devis", per: "", desc: "Grandes archives ou fonds associatifs.", features: ["16 bobines et plus", "Restauration image par image", "Étalonnage avancé", "Sauvegarde double (USB + cloud)", "Suivi personnalisé", "Rapport d'archivage complet"], highlight: false },
+  { name: "Découverte", price: "29€", per: "/ bobine", desc: "Pour tester avant de confier toute votre archive.", features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse"], highlight: false },
+  { name: "Famille", price: "22€", per: "/ bobine", desc: "La formule la plus choisie.", features: ["4 à 15 bobines", "1080p Full HD", "Étalonnage inclus", "Lien de téléchargement sécurisé", "Clé USB en option", "Titres datés par bobine", "Réponse prioritaire sous 12h"], highlight: true },
+  { name: "Patrimoine", price: "sur devis", per: "", desc: "Grandes archives ou fonds associatifs.", features: ["16 bobines et plus", "Restauration image par image", "Étalonnage avancé", "Sauvegarde double (téléchargement + cloud)", "Suivi personnalisé", "Rapport d'archivage complet"], highlight: false },
 ];
 
 const supplements = [
-  { name: "Bobine très abîmée (nettoyage lourd)", price: "sur devis" },
+  { name: "Bobine très abîmée (réparations multiples de collures)", price: "sur devis" },
   { name: "Titrage personnalisé et chapitrage", price: "+ 25€ / heure de rendu" },
   { name: "Envoi retour en suivi (Colissimo)", price: "12€" },
 ];

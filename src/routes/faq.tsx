@@ -5,17 +5,16 @@ import { Link } from "@tanstack/react-router";
 
 const items = [
   { q: "Combien de temps dure la numérisation ?", a: "10 jours ouvrés en moyenne, à partir de la réception de vos bobines. Un délai précis vous est donné dans le devis." },
-  { q: "Comment sont manipulées mes bobines ?", a: "Avec gants coton, dans un espace de travail dédié. Chaque bobine est numérotée à l'arrivée, inspectée, nettoyée si besoin, puis stockée à l'abri en attendant sa numérisation." },
+  { q: "Comment sont manipulées mes bobines ?", a: "Dans un espace de travail dédié, avec précaution. Chaque bobine est numérotée à l'arrivée, inspectée, puis stockée à l'abri en attendant sa numérisation." },
   { q: "Projetez-vous mes films ?", a: "Jamais. La projection use la bobine et peut même la rayer. Nous utilisons un banc image par image : la pellicule défile lentement devant un capteur haute définition, sans friction." },
   { q: "Quelle résolution finale ?", a: "1080p Full HD, en fichier .mp4 universel. Idéal pour visionner sur TV, tablette et ordinateur, et pour partager avec la famille." },
   { q: "Corrigez-vous les couleurs ?", a: "Oui, un étalonnage doux est inclus. Nous respectons l'esprit d'origine — le grain Super 8 reste, les couleurs redeviennent justes." },
-  { q: "Et si mes films sont sonores ?", a: "Le son magnétique des Super 8 sonores est numérisé en synchro avec l'image, sans traitement destructif." },
   { q: "Que se passe-t-il si une bobine est trop abîmée ?", a: "Nous vous prévenons immédiatement, avec photos à l'appui. Aucune restauration lourde n'est engagée sans votre accord écrit." },
-  { q: "Sur quel support recevrai-je le rendu ?", a: "Au choix : clé USB gravée à votre nom, lien de téléchargement sécurisé (30 jours), DVD sur demande." },
+  { q: "Sur quel support recevrai-je le rendu ?", a: "Par défaut, un lien de téléchargement sécurisé valable 30 jours. Sur demande, vous pouvez aussi recevoir vos fichiers sur clé USB en option." },
   { q: "Combien coûte la numérisation ?", a: "À partir de 22€ par bobine dans la formule Famille. Le tarif final dépend du volume, de la durée totale et du niveau de restauration. Voir la page Tarifs." },
   { q: "Quelle est la différence entre Super 8 et 8 mm ?", a: "La taille des perforations et donc de l'image. Le Super 8 (post-1965) offre une image plus grande et plus détaillée. Voir notre article dédié dans le Journal." },
   { q: "Où êtes-vous situés ?", a: "Nous travaillons depuis la France et acceptons les envois de toute l'Europe. Rencontres en mains propres possibles sur rendez-vous." },
-  { q: "Puis-je récupérer mes bobines originales ?", a: "Bien sûr, elles vous sont toujours rendues. Nous les remettons dans des boîtes neuves, propres et étiquetées." },
+  { q: "Puis-je récupérer mes bobines originales ?", a: "Bien sûr, elles vous sont toujours rendues, étiquetées et prêtes à être rangées avec vos archives." },
 ];
 
 export const Route = createFileRoute("/faq")({

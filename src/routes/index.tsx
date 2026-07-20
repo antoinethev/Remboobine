@@ -215,7 +215,7 @@ function Approach() {
           <ul className="mt-8 space-y-3 text-sm text-cream/80">
             <li className="flex gap-3"><span className="text-coral">→</span> Numérisation image par image en 1080p Full HD</li>
             <li className="flex gap-3"><span className="text-coral">→</span> Scanner dédié Super 8 et 8 mm — aucune projection</li>
-            <li className="flex gap-3"><span className="text-coral">→</span> Nettoyage manuel des bobines fragiles</li>
+            <li className="flex gap-3"><span className="text-coral">→</span> Inspection soigneuse et réparation des collures fragiles</li>
             <li className="flex gap-3"><span className="text-coral">→</span> Fichier .mp4 universel, prêt à partager ou archiver</li>
           </ul>
         </div>
@@ -236,13 +236,13 @@ function Approach() {
 /* ------------------------------ PROCESS --------------------------------- */
 function Process() {
   const steps = [
-    { t: "Prise de contact", d: "Vous nous décrivez votre projet (nombre de bobines, format, état). Devis gratuit sous 24h." },
+    { t: "Prise de contact", d: "Vous nous décrivez votre projet (nombre de bobines, taille des bobines, format, état). Devis gratuit sous 24h." },
     { t: "Réception des bobines", d: "Remise en mains propres si possible, sinon envoi suivi (Colissimo, Mondial Relay…). Chaque bobine est numérotée." },
-    { t: "Inspection & nettoyage", d: "Nous inspectons chaque bobine, réparons les collures fragiles et dépoussiérons délicatement." },
+    { t: "Inspection", d: "Nous inspectons chaque bobine et réparons les collures fragiles avant la numérisation." },
     { t: "Numérisation image par image", d: "Capture image par image en 1080p Full HD sur scanner dédié Super 8 / 8 mm. Aucune projection destructrice." },
     { t: "Restauration & étalonnage", d: "Stabilisation, correction colorimétrique douce, respect du grain d'origine." },
     { t: "Montage & titres", d: "Regroupement par bobine, insertion d'un titre daté si vous le souhaitez, export en formats universels." },
-    { t: "Livraison", d: "Fichier(s) sur clé USB gravée ou lien de téléchargement sécurisé, avec vos bobines originales rendues intactes." },
+    { t: "Livraison", d: "Lien de téléchargement sécurisé par défaut, ou clé USB en option. Vos bobines originales vous sont rendues, étiquetées." },
   ];
   return (
     <section id="processus" className="mx-auto max-w-7xl px-6 py-24">
@@ -279,11 +279,11 @@ function Process() {
 /* ------------------------------ BENEFITS -------------------------------- */
 function Benefits() {
   const items = [
-    { t: "Manipulation artisanale", d: "Gants coton, nettoyage manuel, aucune bobine traitée à la chaîne." },
+    { t: "Manipulation artisanale", d: "Chaque bobine est manipulée avec soin, jamais traitée à la chaîne." },
     { t: "Numérisation 1080p", d: "Scanner dédié Super 8 & 8 mm, capture image par image en 1080p Full HD." },
     { t: "Aucune projection", d: "Nous ne projetons jamais vos films : votre bobine ne subit aucune usure." },
-    { t: "Livraison flexible", d: "Clé USB gravée, lien de téléchargement sécurisé, fichier .mp4 universel." },
-    { t: "Vos originaux préservés", d: "Bobines rendues dans des boîtes neuves, étiquetées et prêtes à archiver." },
+    { t: "Livraison flexible", d: "Lien de téléchargement sécurisé par défaut, clé USB en option, fichier .mp4 universel." },
+    { t: "Vos originaux préservés", d: "Bobines rendues étiquetées, prêtes à être rangées avec vos archives." },
     { t: "Confidentialité totale", d: "Vos images n'appartiennent qu'à vous. Aucune diffusion, aucune sauvegarde permanente sans accord." },
   ];
   return (
@@ -317,7 +317,7 @@ function Pricing() {
       price: "à partir de 29€",
       per: "/ bobine",
       desc: "Pour tester avant de confier toute votre archive.",
-      features: ["1 à 3 bobines", "HD 1080p", "Fichier .mp4", "Livraison numérique"],
+      features: ["1 à 3 bobines", "HD 1080p", "Fichier .mp4", "Lien de téléchargement sécurisé"],
       highlight: false,
     },
     {
@@ -328,8 +328,9 @@ function Pricing() {
       features: [
         "4 à 15 bobines",
         "HD 1080p Full HD",
-        "Nettoyage & étalonnage inclus",
-        "Clé USB gravée offerte",
+        "Étalonnage inclus",
+        "Lien de téléchargement sécurisé",
+        "Clé USB en option",
         "Titres datés par bobine",
       ],
       highlight: true,
@@ -410,7 +411,7 @@ function Pricing() {
 function Testimonials() {
   const items = [
     { q: "J'ai revu mon père jeune, en mouvement, pour la première fois depuis 40 ans. Je n'ai pas de mots.", a: "Camille, Lyon" },
-    { q: "Travail d'orfèvre. Les couleurs sont magnifiques, on entend même le vieux 8mm sonore de mes grands-parents.", a: "Étienne, Nantes" },
+    { q: "Travail d'orfèvre. Les couleurs sont magnifiques, on retrouve tout le charme des vieux 8mm de mes grands-parents.", a: "Étienne, Nantes" },
     { q: "Communication parfaite du début à la fin. Mes bobines me sont revenues étiquetées et rangées.", a: "Sophie, Bordeaux" },
   ];
   return (
@@ -439,7 +440,7 @@ export const faqItems = [
   { q: "Combien de temps dure la numérisation ?", a: "Comptez en moyenne 10 jours ouvrés à partir de la réception de vos bobines. Les commandes importantes ou nécessitant beaucoup de restauration peuvent demander plus de temps — nous vous donnons toujours un délai précis avec le devis." },
   { q: "Mes bobines sont-elles en sécurité ?", a: "Dans un espace de travail dédié. Chaque bobine est numérotée à l'arrivée, inspectée, nettoyée si besoin, puis stockée à l'abri en attendant sa numérisation." },
   { q: "Quelle est la qualité finale ?", a: "Nous livrons en 1080p Full HD (fichier .mp4 universel), en numérisation image par image. C'est la qualité standard pour visionner vos films sur TV, tablette et ordinateur, et pour les partager avec la famille." },
-  { q: "Sur quel support recevrai-je mes films ?", a: "Au choix : clé USB gravée à votre nom, ou lien de téléchargement sécurisé valable 30 jours. Vous pouvez aussi opter pour un DVD sur demande." },
+  { q: "Sur quel support recevrai-je mes films ?", a: "Par défaut, un lien de téléchargement sécurisé valable 30 jours — pratique et immédiat. Sur demande, vous pouvez aussi recevoir vos fichiers sur clé USB en option." },
   { q: "Et si mes bobines sont vraiment abîmées ?", a: "Nous inspectons chaque bobine avant de commencer. Si une restauration lourde est nécessaire, nous vous prévenons et vous devisons l'opération. Nous ne travaillons jamais sans votre accord." },
   { q: "Puis-je vous rencontrer ?", a: "Oui, l'échange en mains propres est possible et souvent apprécié. Contactez-nous pour convenir d'un rendez-vous. Sinon, l'envoi en suivi (Colissimo ou Mondial Relay) fonctionne très bien — pensez à conserver votre numéro de suivi." },
 ];
@@ -508,7 +509,7 @@ function ContactCTA() {
             Prêt à faire revivre vos souvenirs ?
           </h2>
           <p className="mt-5 text-lg text-cream/80">
-            Envoyez-nous un mot avec le nombre approximatif de bobines et leur format si vous le connaissez.
+            Envoyez-nous un mot avec le nombre approximatif de bobines, leur taille et leur format si vous les connaissez.
             Nous vous répondons sous 24h avec un devis clair et sans engagement.
           </p>
           <div className="mt-10 space-y-4 text-lg">
@@ -550,7 +551,19 @@ export function ContactForm() {
             <Field label="Nom" name="nom" />
           </div>
           <Field label="Email" name="email" type="email" />
-          <Field label="Téléphone (optionnel)" name="tel" type="tel" />
+          <Field label="Téléphone" name="tel" type="tel" />
+          <div>
+            <label className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
+              Taille des bobines
+            </label>
+            <select className="w-full rounded-lg border border-cream/20 bg-transparent px-4 py-3 text-cream focus:border-coral focus:outline-none">
+              <option className="bg-primary">Petites (7,5 cm / ~15 m)</option>
+              <option className="bg-primary">Moyennes (12 cm / ~60 m)</option>
+              <option className="bg-primary">Grandes (18 cm / ~120 m)</option>
+              <option className="bg-primary">Mélange de tailles</option>
+              <option className="bg-primary">Je ne sais pas encore</option>
+            </select>
+          </div>
           <div>
             <label className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
               Nombre approximatif de bobines

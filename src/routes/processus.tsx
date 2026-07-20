@@ -6,7 +6,7 @@ export const Route = createFileRoute("/processus")({
   head: () => ({
     meta: [
       { title: "Notre processus de numérisation Super 8 & 8 mm — Remboobine" },
-      { name: "description", content: "Découvrez notre processus artisanal en 7 étapes : inspection, nettoyage, numérisation image par image en HD, restauration et livraison sur clé USB." },
+      { name: "description", content: "Découvrez notre processus artisanal en 7 étapes : inspection, numérisation image par image en HD, restauration et livraison par lien de téléchargement sécurisé." },
       { property: "og:title", content: "Notre processus de numérisation — Remboobine" },
       { property: "og:description", content: "Un processus artisanal en 7 étapes pour préserver vos films Super 8 et 8 mm." },
       { property: "og:url", content: "/processus" },
@@ -17,13 +17,13 @@ export const Route = createFileRoute("/processus")({
 });
 
 const steps = [
-  { t: "Prise de contact", d: "Vous nous décrivez votre archive : nombre de bobines, format supposé, état général. Nous vous répondons sous 24h avec un devis clair et gratuit." },
+  { t: "Prise de contact", d: "Vous nous décrivez votre archive : nombre de bobines, taille des bobines, format supposé, état général. Nous vous répondons sous 24h avec un devis clair et gratuit." },
   { t: "Réception des bobines", d: "En mains propres sur rendez-vous, ou par envoi suivi (Colissimo, Mondial Relay…). Chaque bobine reçoit un numéro unique et une fiche d'inspection." },
-  { t: "Inspection & nettoyage", d: "Inspection visuelle sous loupe, réparation des collures fragiles, dépoussiérage doux. Les films atteints de syndrome du vinaigre sont isolés et traités en priorité." },
+  { t: "Inspection", d: "Inspection visuelle sous loupe, réparation des collures fragiles. Les films atteints de syndrome du vinaigre sont isolés et traités en priorité." },
   { t: "Numérisation image par image", d: "Passage sur scanner dédié Super 8 / 8 mm : chaque image est capturée individuellement en 1080p Full HD. Aucune projection, aucun contact abrasif." },
   { t: "Restauration & étalonnage", d: "Stabilisation numérique, correction colorimétrique douce, respect du grain d'origine. Le film retrouve ses couleurs sans perdre son âme." },
   { t: "Montage & titres", d: "Regroupement par bobine, insertion d'un titre daté à votre demande, export en formats universels. Vous validez avant livraison." },
-  { t: "Livraison", d: "Fichier(s) sur clé USB gravée à votre nom ou lien sécurisé. Vos bobines originales vous sont rendues, étiquetées et rangées." },
+  { t: "Livraison", d: "Lien de téléchargement sécurisé par défaut, ou clé USB en option. Vos bobines originales vous sont rendues, étiquetées." },
 ];
 
 function ProcessPage() {

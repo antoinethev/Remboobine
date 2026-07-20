@@ -34,7 +34,7 @@ export const articles: Article[] = [
       {
         heading: "Manipuler avec précaution",
         body: [
-          "Toujours avec des gants coton ou des mains parfaitement propres. Le gras des doigts marque le film et attire la poussière.",
+          "Avec des mains parfaitement propres. Le gras des doigts marque le film et attire la poussière.",
           "Ne rembobinez jamais un film sec ou cassant sans l'avoir inspecté d'abord. Un film abîmé mérite un passage chez un professionnel.",
         ],
       },
@@ -49,7 +49,7 @@ export const articles: Article[] = [
   {
     slug: "difference-super-8-8mm",
     title: "Super 8 ou 8 mm : quelle différence, comment les reconnaître ?",
-    description: "Format, sonorisation, qualité d'image : tout ce qu'il faut savoir pour identifier vos bobines familiales avant numérisation.",
+    description: "Format, perforations, qualité d'image : tout ce qu'il faut savoir pour identifier vos bobines familiales avant numérisation.",
     readingTime: "5 min",
     category: "Formats",
     intro: "Vous avez retrouvé une pile de bobines dans un carton et vous ne savez pas ce que c'est. Rassurez-vous : les distinguer est plus simple qu'il n'y paraît.",
@@ -58,14 +58,13 @@ export const articles: Article[] = [
         heading: "Le 8 mm standard (ou « Regular 8 »)",
         body: [
           "Commercialisé à partir de 1932, le 8 mm standard était le format grand public de l'après-guerre. Les perforations sont grandes, l'image occupe une petite portion du film.",
-          "Il est presque toujours muet et se trouve sur des petites bobines métalliques.",
+          "Il se trouve généralement sur des petites bobines métalliques.",
         ],
       },
       {
         heading: "Le Super 8",
         body: [
           "Lancé par Kodak en 1965, le Super 8 offre des perforations plus petites, ce qui laisse plus de place à l'image : environ 50 % plus grande. Résultat : une définition sensiblement meilleure.",
-          "À partir de 1973, certaines bobines Super 8 sont sonores : on repère alors une fine bande magnétique brune le long du film.",
         ],
       },
       {
@@ -119,9 +118,9 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "Éloigner de tout appareil électronique",
+        heading: "Éloigner de l'humidité et des sources de chaleur",
         body: [
-          "Les champs magnétiques (téléviseur, enceintes, disque dur) peuvent affecter la bande son magnétique de certains Super 8. Gardez une distance de sécurité.",
+          "L'humidité favorise le syndrome du vinaigre et les moisissures. Un endroit sec, à température stable (autour de 18 °C), est idéal.",
         ],
       },
       {
