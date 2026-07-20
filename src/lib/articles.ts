@@ -58,14 +58,13 @@ export const articles: Article[] = [
         heading: "Le 8 mm standard (ou « Regular 8 »)",
         body: [
           "Commercialisé à partir de 1932, le 8 mm standard était le format grand public de l'après-guerre. Les perforations sont grandes, l'image occupe une petite portion du film.",
-          "Il est presque toujours muet et se trouve sur des petites bobines métalliques.",
+          "Il se trouve généralement sur des petites bobines métalliques.",
         ],
       },
       {
         heading: "Le Super 8",
         body: [
           "Lancé par Kodak en 1965, le Super 8 offre des perforations plus petites, ce qui laisse plus de place à l'image : environ 50 % plus grande. Résultat : une définition sensiblement meilleure.",
-          "À partir de 1973, certaines bobines Super 8 sont sonores : on repère alors une fine bande magnétique brune le long du film.",
         ],
       },
       {
