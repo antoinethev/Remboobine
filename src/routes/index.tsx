@@ -203,9 +203,10 @@ function Approach() {
             Un rendu honnête, un travail soigné.
           </h2>
           <p className="mt-5 text-lg text-cream/80">
-            Nous ne vendons pas de miracles. Nous numérisons vos bobines Super 8 et 8 mm en <strong className="text-cream">1080p Full HD</strong>,
-            image par image, avec un scanner dédié — jamais par projection. Le grain du Super 8 est préservé,
-            les couleurs sont retravaillées avec mesure, et le résultat reste fidèle à vos films d'origine.
+            Nous numérisons vos bobines Super 8 et 8 mm en qualité <strong className="text-cream">1080p Full HD</strong>,
+            image par image, avec un scanner dédié préservant le grain du Super 8. Les films reçoivent un montage
+            pour un visionnage agréable en famille, tout en conservant l'intégralité des images. Un travail
+            garantissant un résultat fidèle à vos films d'origine.
           </p>
           <ul className="mt-8 space-y-3 text-sm text-cream/80">
             <li className="flex gap-3"><span className="text-coral">→</span> Numérisation image par image en 1080p Full HD</li>
