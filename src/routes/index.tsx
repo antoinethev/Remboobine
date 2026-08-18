@@ -212,7 +212,7 @@ function Approach() {
             <li className="flex gap-3"><span className="text-coral">→</span> Numérisation image par image en 1080p Full HD</li>
             <li className="flex gap-3"><span className="text-coral">→</span> Scanner dédié Super 8 et 8 mm — aucune projection</li>
             <li className="flex gap-3"><span className="text-coral">→</span> Inspection soigneuse et réparation des collures fragiles</li>
-            <li className="flex gap-3"><span className="text-coral">→</span> Fichier .mp4 universel, prêt à partager ou archiver</li>
+            <li className="flex gap-3"><span className="text-coral">→</span> Fichier .mp4 universel, prêt à visionner ou partager</li>
           </ul>
         </div>
         <div className="relative">
