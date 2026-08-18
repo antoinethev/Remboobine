@@ -5,7 +5,7 @@ export function BrandLogo({ className = "" }: { className?: string }) {
   return (
     <Link
       to="/"
-      aria-label="Remboobine"
+      aria-label="Remb∞bine"
       className={`inline-flex items-baseline font-display text-2xl font-bold tracking-tight text-primary ${className}`}
     >
       <span>Remb</span>
@@ -88,7 +88,7 @@ export function Footer() {
       </div>
       <div className="border-t border-primary/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-primary/60 md:flex-row">
-          <p>© {new Date().getFullYear()} Remboobine — Numérisation Super 8 & 8 mm. Fait avec soin en France.</p>
+          <p>© {new Date().getFullYear()} Remb∞bine — Numérisation Super 8 & 8 mm. Fait avec soin en France.</p>
           <Link to="/mentions-legales" className="hover:text-coral">Mentions légales</Link>
         </div>
       </div>
