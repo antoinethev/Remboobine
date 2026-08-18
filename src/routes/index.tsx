@@ -104,7 +104,7 @@ function Hero() {
             </div>
             <div>
               <dt className="text-primary/60">Rendu</dt>
-              <dd className="mt-1 font-display text-xl text-primary">Clé USB</dd>
+              <dd className="mt-1 font-display text-xl text-primary">Lien de téléchargement ou clé USB</dd>
             </div>
             <div>
               <dt className="text-primary/60">Délai moyen</dt>
