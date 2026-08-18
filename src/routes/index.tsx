@@ -234,10 +234,8 @@ function Process() {
   const steps = [
     { t: "Prise de contact", d: "Vous nous décrivez votre projet (nombre de bobines, taille des bobines, format, état). Devis gratuit sous 24h." },
     { t: "Réception des bobines", d: "Remise en mains propres si possible, sinon envoi suivi (Colissimo, Mondial Relay…). Chaque bobine est numérotée." },
-    { t: "Inspection", d: "Nous inspectons chaque bobine et réparons les collures fragiles avant la numérisation." },
     { t: "Numérisation image par image", d: "Capture image par image en 1080p Full HD sur scanner dédié Super 8 / 8 mm. Aucune projection destructrice." },
-    { t: "Restauration & étalonnage", d: "Stabilisation, correction colorimétrique douce, respect du grain d'origine." },
-    { t: "Montage & titres", d: "Regroupement par bobine, insertion d'un titre daté si vous le souhaitez, export en formats universels." },
+    { t: "Montage", d: "Correction colorimétrique douce et assemblage des extraits vidéos. Un fichier par bobine agréable à visionner." },
     { t: "Livraison", d: "Lien de téléchargement sécurisé, ou clé USB en option. Vos bobines originales vous sont rendues." },
   ];
   return (
@@ -246,7 +244,7 @@ function Process() {
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Notre processus</p>
           <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
-            Sept étapes, aucune approximation.
+            Cinq étapes, aucune approximation.
           </h2>
         </div>
         <img src={workspace} alt="Espace de travail de numérisation Super 8" width={1600} height={1008} className="hidden h-40 w-72 rounded-2xl object-cover md:block" loading="lazy" />
@@ -258,7 +256,7 @@ function Process() {
             className="group grid gap-4 rounded-2xl border border-primary/10 bg-cream/70 p-6 transition hover:border-coral/50 md:grid-cols-[auto_1fr] md:gap-8"
           >
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary font-display text-xl text-primary-foreground transition group-hover:bg-coral">
-              {String(i + 1).padStart(2, "0")}
+              {i + 1}
             </div>
             <div>
               <h3 className="font-display text-2xl text-primary">{s.t}</h3>
