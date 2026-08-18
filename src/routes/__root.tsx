@@ -77,21 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Remboobine — Numérisation Super 8 & 8 mm" },
+      { title: "Remb∞bine — Numérisation Super 8 & 8 mm" },
       {
         name: "description",
         content:
           "Numérisation artisanale de films Super 8 et 8 mm en haute définition. Vos souvenirs de famille, restaurés image par image.",
       },
-      { name: "author", content: "Remboobine" },
+      { name: "author", content: "Remb∞bine" },
       { name: "theme-color", content: "#f4c99a" },
-      { property: "og:site_name", content: "Remboobine" },
-      { property: "og:title", content: "Remboobine — Numérisation Super 8 & 8 mm" },
+      { property: "og:site_name", content: "Remb∞bine" },
+      { property: "og:title", content: "Remb∞bine — Numérisation Super 8 & 8 mm" },
       { property: "og:description", content: "Numérisation artisanale de films Super 8 et 8 mm. Vos souvenirs de famille, image par image." },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "fr_FR" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Remboobine — Numérisation Super 8 & 8 mm" },
+      { name: "twitter:title", content: "Remb∞bine — Numérisation Super 8 & 8 mm" },
       { name: "twitter:description", content: "Numérisation artisanale de films Super 8 et 8 mm." },
     ],
     links: [
@@ -104,7 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Remboobine",
+          name: "Remb∞bine",
           description: "Numérisation artisanale de films Super 8 et 8 mm.",
           email: "remboobine@gmail.com",
           telephone: "+33766269483",

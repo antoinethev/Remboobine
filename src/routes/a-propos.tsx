@@ -5,10 +5,10 @@ import reels from "@/assets/reels-macro.jpg";
 export const Route = createFileRoute("/a-propos")({
   head: () => ({
     meta: [
-      { title: "À propos — Remboobine, atelier de numérisation Super 8" },
-      { name: "description", content: "Remboobine est un atelier artisanal dédié à la numérisation soignée des films Super 8 et 8 mm. Notre passion : rendre vivants les souvenirs de famille." },
-      { property: "og:title", content: "À propos — Remboobine" },
-      { property: "og:description", content: "L'histoire de Remboobine, atelier artisanal de numérisation Super 8 et 8 mm." },
+      { title: "À propos — Remb∞bine, atelier de numérisation Super 8" },
+      { name: "description", content: "Remb∞bine est un atelier artisanal dédié à la numérisation soignée des films Super 8 et 8 mm. Notre passion : rendre vivants les souvenirs de famille." },
+      { property: "og:title", content: "À propos — Remb∞bine" },
+      { property: "og:description", content: "L'histoire de Remb∞bine, atelier artisanal de numérisation Super 8 et 8 mm." },
       { property: "og:url", content: "/a-propos" },
     ],
     links: [{ rel: "canonical", href: "/a-propos" }],
@@ -25,7 +25,7 @@ function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Notre histoire</p>
           <h1 className="mt-3 font-display text-5xl font-semibold text-primary">Rendre vivants les souvenirs qu'on croyait perdus.</h1>
           <p className="mt-6 text-lg text-primary/80">
-            Remboobine est né d'un carton oublié dans un grenier. Douze bobines Super 8, une odeur de vinaigre,
+            Remb∞bine est né d'un carton oublié dans un grenier. Douze bobines Super 8, une odeur de vinaigre,
             et l'évidence : si on n'agissait pas, la voix de mon grand-père disparaîtrait avec le celluloïd.
           </p>
           <p className="mt-4 text-primary/75">

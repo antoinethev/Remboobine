@@ -5,9 +5,9 @@ import { articles } from "@/lib/articles";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Journal — Conseils sur les films Super 8 & 8 mm · Remboobine" },
+      { title: "Journal — Conseils sur les films Super 8 & 8 mm · Remb∞bine" },
       { name: "description", content: "Articles et conseils sur la conservation, la reconnaissance et la numérisation des films Super 8 et 8 mm. Guide pratique et culture du cinéma amateur." },
-      { property: "og:title", content: "Journal — Remboobine" },
+      { property: "og:title", content: "Journal — Remb∞bine" },
       { property: "og:description", content: "Conseils et guides sur les films Super 8 et 8 mm." },
       { property: "og:url", content: "/blog" },
     ],

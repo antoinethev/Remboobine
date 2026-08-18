@@ -20,9 +20,9 @@ const items = [
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Numérisation Super 8 & 8 mm · Remboobine" },
+      { title: "FAQ — Numérisation Super 8 & 8 mm · Remb∞bine" },
       { name: "description", content: "Toutes vos questions sur la numérisation de films Super 8 et 8 mm : délais, qualité, tarifs, manipulation, formats de rendu." },
-      { property: "og:title", content: "FAQ — Remboobine" },
+      { property: "og:title", content: "FAQ — Remb∞bine" },
       { property: "og:description", content: "Toutes vos questions sur la numérisation Super 8 et 8 mm." },
       { property: "og:url", content: "/faq" },
     ],

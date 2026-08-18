@@ -4,9 +4,9 @@ import { PageShell, Breadcrumbs } from "@/components/site-chrome";
 export const Route = createFileRoute("/tarifs")({
   head: () => ({
     meta: [
-      { title: "Tarifs numérisation Super 8 & 8 mm — Remboobine" },
+      { title: "Tarifs numérisation Super 8 & 8 mm — Remb∞bine" },
       { name: "description", content: "Tarifs clairs pour la numérisation de vos films Super 8 et 8 mm : formules Découverte, Famille et Patrimoine. Devis gratuit sous 24h." },
-      { property: "og:title", content: "Tarifs — Remboobine" },
+      { property: "og:title", content: "Tarifs — Remb∞bine" },
       { property: "og:description", content: "Formules Découverte, Famille et Patrimoine pour numériser vos films Super 8 et 8 mm." },
       { property: "og:url", content: "/tarifs" },
     ],

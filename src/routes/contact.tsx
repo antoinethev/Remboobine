@@ -6,9 +6,9 @@ import { Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Remboobine · Numérisation Super 8 & 8 mm" },
-      { name: "description", content: "Contactez Remboobine pour un devis gratuit sous 24h. Téléphone, email et formulaire pour confier vos films Super 8 et 8 mm." },
-      { property: "og:title", content: "Contact — Remboobine" },
+      { title: "Contact — Remb∞bine · Numérisation Super 8 & 8 mm" },
+      { name: "description", content: "Contactez Remb∞bine pour un devis gratuit sous 24h. Téléphone, email et formulaire pour confier vos films Super 8 et 8 mm." },
+      { property: "og:title", content: "Contact — Remb∞bine" },
       { property: "og:description", content: "Devis gratuit sous 24h pour la numérisation de vos films Super 8 et 8 mm." },
       { property: "og:url", content: "/contact" },
     ],

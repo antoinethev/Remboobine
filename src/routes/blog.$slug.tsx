@@ -10,11 +10,11 @@ export const Route = createFileRoute("/blog/$slug")({
   },
   head: ({ loaderData, params }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Article introuvable — Remboobine" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Article introuvable — Remb∞bine" }, { name: "robots", content: "noindex" }] };
     }
     return {
       meta: [
-        { title: `${loaderData.title} — Remboobine` },
+        { title: `${loaderData.title} — Remb∞bine` },
         { name: "description", content: loaderData.description },
         { property: "og:title", content: loaderData.title },
         { property: "og:description", content: loaderData.description },
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/blog/$slug")({
           "@type": "Article",
           headline: loaderData.title,
           description: loaderData.description,
-          author: { "@type": "Organization", name: "Remboobine" },
+          author: { "@type": "Organization", name: "Remb∞bine" },
         }),
       }],
     };

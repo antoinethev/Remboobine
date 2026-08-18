@@ -8,13 +8,13 @@ import workspace from "@/assets/workspace.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Remboobine — Numérisation Super 8 & 8 mm en haute définition" },
+      { title: "Remb∞bine — Numérisation Super 8 & 8 mm en haute définition" },
       {
         name: "description",
         content:
           "Confiez vos bobines Super 8 et 8 mm à un artisan passionné. Numérisation image par image en HD, restauration soignée, livraison sur clé USB ou lien de téléchargement. Vos souvenirs de famille méritent de revivre.",
       },
-      { property: "og:title", content: "Remboobine — Numérisation Super 8 & 8 mm" },
+      { property: "og:title", content: "Remb∞bine — Numérisation Super 8 & 8 mm" },
       { property: "og:description", content: "Numérisation artisanale et restauration de films Super 8 et 8 mm. Vos souvenirs de famille, image par image." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: "Remboobine",
+          name: "Remb∞bine",
           description: "Numérisation artisanale de films Super 8 et 8 mm.",
           telephone: "+33766269483",
           email: "remboobine@gmail.com",
@@ -81,7 +81,7 @@ function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-primary/80">
             Redécouvre ton enfance, tes parents jeunes, tous ces moments qu'on croyait perdus.
-            Remboobine numérise tes films Super 8 et 8 mm image par image, avec le soin qu'un souvenir mérite.
+            Remb∞bine numérise tes films Super 8 et 8 mm image par image, avec le soin qu'un souvenir mérite.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -216,7 +216,7 @@ function Approach() {
         </div>
         <div className="relative">
           <div className="overflow-hidden rounded-2xl border-[6px] border-cream shadow-[var(--shadow-lift)]">
-            <img src={workspace} alt="Espace de numérisation Remboobine" width={1600} height={1008} className="h-full w-full object-cover" loading="lazy" />
+            <img src={workspace} alt="Espace de numérisation Remb∞bine" width={1600} height={1008} className="h-full w-full object-cover" loading="lazy" />
           </div>
           <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-cream px-5 py-4 text-primary shadow-lg md:block">
             <p className="font-display text-2xl">1080p</p>
