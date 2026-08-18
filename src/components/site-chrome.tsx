@@ -79,10 +79,10 @@ export function Footer() {
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">Journal</h4>
           <ul className="space-y-2 text-sm text-primary/80">
-            <li><Link to="/blog/comment-conserver-films-super-8" className="hover:text-coral">Conserver ses films Super 8</Link></li>
-            <li><Link to="/blog/difference-super-8-8mm" className="hover:text-coral">Super 8 vs 8 mm</Link></li>
-            <li><Link to="/blog/pourquoi-numeriser-ses-bobines" className="hover:text-coral">Pourquoi numériser</Link></li>
-            <li><Link to="/blog/stocker-films-anciens" className="hover:text-coral">Stocker des films anciens</Link></li>
+            <li><Link to="/blog/$slug" params={{ slug: "comment-conserver-films-super-8" }} className="hover:text-coral">Conserver ses films Super 8</Link></li>
+            <li><Link to="/blog/$slug" params={{ slug: "difference-super-8-8mm" }} className="hover:text-coral">Super 8 vs 8 mm</Link></li>
+            <li><Link to="/blog/$slug" params={{ slug: "pourquoi-numeriser-ses-bobines" }} className="hover:text-coral">Pourquoi numériser</Link></li>
+            <li><Link to="/blog/$slug" params={{ slug: "stocker-films-anciens" }} className="hover:text-coral">Stocker des films anciens</Link></li>
           </ul>
         </div>
       </div>
