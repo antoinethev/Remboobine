@@ -70,7 +70,7 @@ function Hero() {
         className="absolute inset-0 -z-10"
         style={{ background: "var(--gradient-warm)" }}
       />
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 pt-16 md:grid-cols-[1.05fr_1fr] md:gap-16 md:pb-24 md:pt-20">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 pt-16 md:grid-cols-[1.35fr_1fr] md:gap-16 md:pb-24 md:pt-20">
         <div className="fade-up flex flex-col justify-center">
           <p className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-cream/60 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-primary">
             <span className="h-1.5 w-1.5 rounded-full bg-coral" /> Atelier de numérisation Super 8 · 8 mm
@@ -79,7 +79,7 @@ function Hero() {
             Ces bobines attendent depuis 50 ans.
             <span className="mt-2 block italic text-coral">Il est temps.</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-primary/80">
+          <p className="mt-6 max-w-2xl text-lg text-primary/80">
             Redécouvre ton enfance, tes parents jeunes, tous ces moments qu'on croyait perdus.
             Remb∞bine numérise tes films Super 8 et 8 mm image par image, avec le soin qu'un souvenir mérite.
           </p>
@@ -97,7 +97,7 @@ function Hero() {
               Voir le processus →
             </Link>
           </div>
-          <dl className="mt-10 grid max-w-md grid-cols-1 gap-6 border-t border-primary/15 pt-6 text-sm sm:grid-cols-3">
+          <dl className="mt-10 grid max-w-2xl grid-cols-1 gap-6 border-t border-primary/15 pt-6 text-sm sm:grid-cols-3">
             <div>
               <dt className="text-primary/60">Format</dt>
               <dd className="mt-1 font-display text-xl text-primary">HD 1080p</dd>
