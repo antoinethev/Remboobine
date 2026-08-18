@@ -238,7 +238,7 @@ function Process() {
     { t: "Numérisation image par image", d: "Capture image par image en 1080p Full HD sur scanner dédié Super 8 / 8 mm. Aucune projection destructrice." },
     { t: "Restauration & étalonnage", d: "Stabilisation, correction colorimétrique douce, respect du grain d'origine." },
     { t: "Montage & titres", d: "Regroupement par bobine, insertion d'un titre daté si vous le souhaitez, export en formats universels." },
-    { t: "Livraison", d: "Lien de téléchargement sécurisé par défaut, ou clé USB en option. Vos bobines originales vous sont rendues, étiquetées." },
+    { t: "Livraison", d: "Lien de téléchargement sécurisé, ou clé USB en option. Vos bobines originales vous sont rendues." },
   ];
   return (
     <section id="processus" className="mx-auto max-w-7xl px-6 py-24">
