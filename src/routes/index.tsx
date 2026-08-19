@@ -307,24 +307,23 @@ function Pricing() {
   const plans = [
     {
       name: "Découverte",
-      price: "à partir de 29€",
+      price: "18€",
       per: "/ bobine",
       desc: "Pour tester avant de confier toute votre archive.",
-      features: ["1 à 3 bobines", "HD 1080p", "Fichier .mp4", "Lien de téléchargement sécurisé"],
+      features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse", "Clé USB en option"],
       highlight: false,
     },
     {
       name: "Famille",
-      price: "à partir de 22€",
+      price: "15€",
       per: "/ bobine",
-      desc: "La formule la plus choisie, pour tout un carton de souvenirs.",
+      desc: "La formule la plus choisie.",
       features: [
         "4 à 15 bobines",
-        "HD 1080p Full HD",
-        "Étalonnage inclus",
+        "HD 1080p",
         "Lien de téléchargement sécurisé",
         "Clé USB en option",
-        "Titres datés par bobine",
+        "Réponse prioritaire sous 12h",
       ],
       highlight: true,
     },
@@ -332,28 +331,30 @@ function Pricing() {
       name: "Patrimoine",
       price: "sur devis",
       per: "",
-      desc: "Grandes archives familiales ou fonds associatifs.",
+      desc: "Grandes archives ou fonds associatifs.",
       features: [
         "16 bobines et plus",
-        "Restauration avancée",
-        "Étalonnage image par image",
-        "Sauvegarde double",
+        "HD 1080p (.mp4)",
+        "Lien de téléchargement sécurisé",
+        "Clé USB en option",
         "Suivi personnalisé",
       ],
       highlight: false,
     },
+
   ];
   return (
     <section id="tarifs" className="mx-auto max-w-7xl px-6 py-24">
       <div className="mb-14 max-w-2xl">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Tarifs</p>
         <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
-          Des prix clairs. Un devis en 24h.
+          Un devis gratuit et sans engagement en 24h
         </h2>
         <p className="mt-4 text-primary/70">
-          Les tarifs varient selon l'état des bobines, la durée, et le niveau de restauration souhaité.
-          Ces indications vous donnent un ordre d'idée — le devis final est toujours gratuit et sans engagement.
+          Les tarifs varient selon la taille des bobines. Ces indications vous donnent un ordre d'idée.
+          Le devis final est toujours gratuit et sans engagement.
         </p>
+
       </div>
       <div className="grid gap-6 md:grid-cols-3">
         {plans.map((p) => (
