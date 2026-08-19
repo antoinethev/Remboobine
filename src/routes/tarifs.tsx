@@ -33,10 +33,10 @@ function TarifsPage() {
       <Breadcrumbs items={[{ to: "/", label: "Accueil" }, { label: "Tarifs" }]} />
       <section className="mx-auto max-w-7xl px-6 py-16">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Tarifs</p>
-        <h1 className="mt-3 max-w-3xl font-display text-5xl font-semibold text-primary">Des prix nets. Un devis en 24 heures.</h1>
+        <h1 className="mt-3 max-w-3xl font-display text-5xl font-semibold text-primary">Un devis gratuit et sans engagement en 24h</h1>
         <p className="mt-5 max-w-2xl text-lg text-primary/75">
-          Les prix ci-dessous sont des ordres de grandeur. Le tarif final dépend de la durée totale, de l'état
-          des bobines et du niveau de restauration souhaité. Le devis est toujours gratuit et sans engagement.
+          les tarifs varient selon la taille des bobines. Ces indications vous donnent un ordre d'idée.
+          Le devis final est toujours gratuit et sans engagement.
         </p>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {plans.map((p) => (
