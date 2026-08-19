@@ -52,7 +52,7 @@ export function Header() {
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-primary/10 bg-[oklch(0.94_0.045_68)]">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-3">
         <div className="md:col-span-2">
           <BrandLogo />
           <p className="mt-4 max-w-sm text-sm text-primary/70">
