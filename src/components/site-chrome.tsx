@@ -20,7 +20,6 @@ export function Header() {
     { to: "/processus", label: "Processus" },
     { to: "/tarifs", label: "Tarifs" },
     { to: "/a-propos", label: "À propos" },
-    { to: "/blog", label: "Journal" },
     { to: "/faq", label: "FAQ" },
   ] as const;
   return (
@@ -53,7 +52,7 @@ export function Header() {
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-primary/10 bg-[oklch(0.94_0.045_68)]">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-3">
         <div className="md:col-span-2">
           <BrandLogo />
           <p className="mt-4 max-w-sm text-sm text-primary/70">
@@ -74,15 +73,6 @@ export function Footer() {
             <li><Link to="/a-propos" className="hover:text-coral">À propos</Link></li>
             <li><Link to="/faq" className="hover:text-coral">Questions fréquentes</Link></li>
             <li><Link to="/contact" className="hover:text-coral">Contact</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-primary">Journal</h4>
-          <ul className="space-y-2 text-sm text-primary/80">
-            <li><Link to="/blog/$slug" params={{ slug: "comment-conserver-films-super-8" }} className="hover:text-coral">Conserver ses films Super 8</Link></li>
-            <li><Link to="/blog/$slug" params={{ slug: "difference-super-8-8mm" }} className="hover:text-coral">Super 8 vs 8 mm</Link></li>
-            <li><Link to="/blog/$slug" params={{ slug: "pourquoi-numeriser-ses-bobines" }} className="hover:text-coral">Pourquoi numériser</Link></li>
-            <li><Link to="/blog/$slug" params={{ slug: "stocker-films-anciens" }} className="hover:text-coral">Stocker des films anciens</Link></li>
           </ul>
         </div>
       </div>
