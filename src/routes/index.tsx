@@ -307,24 +307,23 @@ function Pricing() {
   const plans = [
     {
       name: "Découverte",
-      price: "à partir de 29€",
+      price: "18€",
       per: "/ bobine",
       desc: "Pour tester avant de confier toute votre archive.",
-      features: ["1 à 3 bobines", "HD 1080p", "Fichier .mp4", "Lien de téléchargement sécurisé"],
+      features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse", "Clé USB en option"],
       highlight: false,
     },
     {
       name: "Famille",
-      price: "à partir de 22€",
+      price: "15€",
       per: "/ bobine",
-      desc: "La formule la plus choisie, pour tout un carton de souvenirs.",
+      desc: "La formule la plus choisie.",
       features: [
         "4 à 15 bobines",
-        "HD 1080p Full HD",
-        "Étalonnage inclus",
+        "HD 1080p",
         "Lien de téléchargement sécurisé",
         "Clé USB en option",
-        "Titres datés par bobine",
+        "Réponse prioritaire sous 12h",
       ],
       highlight: true,
     },
@@ -332,16 +331,17 @@ function Pricing() {
       name: "Patrimoine",
       price: "sur devis",
       per: "",
-      desc: "Grandes archives familiales ou fonds associatifs.",
+      desc: "Grandes archives ou fonds associatifs.",
       features: [
         "16 bobines et plus",
-        "Restauration avancée",
-        "Étalonnage image par image",
-        "Sauvegarde double",
+        "HD 1080p (.mp4)",
+        "Lien de téléchargement sécurisé",
+        "Clé USB en option",
         "Suivi personnalisé",
       ],
       highlight: false,
     },
+
   ];
   return (
     <section id="tarifs" className="mx-auto max-w-7xl px-6 py-24">
