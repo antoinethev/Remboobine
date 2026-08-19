@@ -348,12 +348,13 @@ function Pricing() {
       <div className="mb-14 max-w-2xl">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Tarifs</p>
         <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
-          Des prix clairs. Un devis en 24h.
+          Un devis gratuit et sans engagement en 24h
         </h2>
         <p className="mt-4 text-primary/70">
-          Les tarifs varient selon l'état des bobines, la durée, et le niveau de restauration souhaité.
-          Ces indications vous donnent un ordre d'idée — le devis final est toujours gratuit et sans engagement.
+          Les tarifs varient selon la taille des bobines. Ces indications vous donnent un ordre d'idée.
+          Le devis final est toujours gratuit et sans engagement.
         </p>
+
       </div>
       <div className="grid gap-6 md:grid-cols-3">
         {plans.map((p) => (
