@@ -16,9 +16,9 @@ export const Route = createFileRoute("/tarifs")({
 });
 
 const plans = [
-  { name: "Découverte", price: "29€", per: "/ bobine", desc: "Pour tester avant de confier toute votre archive.", features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse"], highlight: false },
-  { name: "Famille", price: "22€", per: "/ bobine", desc: "La formule la plus choisie.", features: ["4 à 15 bobines", "1080p Full HD", "Étalonnage inclus", "Lien de téléchargement sécurisé", "Clé USB en option", "Titres datés par bobine", "Réponse prioritaire sous 12h"], highlight: true },
-  { name: "Patrimoine", price: "sur devis", per: "", desc: "Grandes archives ou fonds associatifs.", features: ["16 bobines et plus", "Restauration image par image", "Étalonnage avancé", "Sauvegarde double (téléchargement + cloud)", "Suivi personnalisé", "Rapport d'archivage complet"], highlight: false },
+  { name: "Découverte", price: "18€", per: "/ bobine", desc: "Pour tester avant de confier toute votre archive.", features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse", "Clé USB en option"], highlight: false },
+  { name: "Famille", price: "15€", per: "/ bobine", desc: "La formule la plus choisie.", features: ["4 à 15 bobines", "HD 1080p", "Lien de téléchargement sécurisé", "Clé USB en option", "Réponse prioritaire sous 12h"], highlight: true },
+  { name: "Patrimoine", price: "sur devis", per: "", desc: "Grandes archives ou fonds associatifs.", features: ["16 bobines et plus", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Clé USB en option", "Suivi personnalisé"], highlight: false },
 ];
 
 const supplements = [
@@ -33,10 +33,10 @@ function TarifsPage() {
       <Breadcrumbs items={[{ to: "/", label: "Accueil" }, { label: "Tarifs" }]} />
       <section className="mx-auto max-w-7xl px-6 py-16">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Tarifs</p>
-        <h1 className="mt-3 max-w-3xl font-display text-5xl font-semibold text-primary">Des prix nets. Un devis en 24 heures.</h1>
+        <h1 className="mt-3 max-w-3xl font-display text-5xl font-semibold text-primary">Un devis gratuit et sans engagement en 24h</h1>
         <p className="mt-5 max-w-2xl text-lg text-primary/75">
-          Les prix ci-dessous sont des ordres de grandeur. Le tarif final dépend de la durée totale, de l'état
-          des bobines et du niveau de restauration souhaité. Le devis est toujours gratuit et sans engagement.
+          les tarifs varient selon la taille des bobines. Ces indications vous donnent un ordre d'idée.
+          Le devis final est toujours gratuit et sans engagement.
         </p>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {plans.map((p) => (
