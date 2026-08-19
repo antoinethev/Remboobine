@@ -16,9 +16,9 @@ export const Route = createFileRoute("/tarifs")({
 });
 
 const plans = [
-  { name: "Découverte", price: "29€", per: "/ bobine", desc: "Pour tester avant de confier toute votre archive.", features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse"], highlight: false },
-  { name: "Famille", price: "22€", per: "/ bobine", desc: "La formule la plus choisie.", features: ["4 à 15 bobines", "1080p Full HD", "Étalonnage inclus", "Lien de téléchargement sécurisé", "Clé USB en option", "Titres datés par bobine", "Réponse prioritaire sous 12h"], highlight: true },
-  { name: "Patrimoine", price: "sur devis", per: "", desc: "Grandes archives ou fonds associatifs.", features: ["16 bobines et plus", "Restauration image par image", "Étalonnage avancé", "Sauvegarde double (téléchargement + cloud)", "Suivi personnalisé", "Rapport d'archivage complet"], highlight: false },
+  { name: "Découverte", price: "18€", per: "/ bobine", desc: "Pour tester avant de confier toute votre archive.", features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse", "Clé USB en option"], highlight: false },
+  { name: "Famille", price: "15€", per: "/ bobine", desc: "La formule la plus choisie.", features: ["4 à 15 bobines", "HD 1080p", "Lien de téléchargement sécurisé", "Clé USB en option", "Réponse prioritaire sous 12h"], highlight: true },
+  { name: "Patrimoine", price: "sur devis", per: "", desc: "Grandes archives ou fonds associatifs.", features: ["16 bobines et plus", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Clé USB en option", "Suivi personnalisé"], highlight: false },
 ];
 
 const supplements = [
