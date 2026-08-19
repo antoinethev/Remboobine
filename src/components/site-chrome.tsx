@@ -20,7 +20,6 @@ export function Header() {
     { to: "/processus", label: "Processus" },
     { to: "/tarifs", label: "Tarifs" },
     { to: "/a-propos", label: "À propos" },
-    { to: "/blog", label: "Journal" },
     { to: "/faq", label: "FAQ" },
   ] as const;
   return (
