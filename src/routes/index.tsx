@@ -220,8 +220,8 @@ function Approach() {
             <img src={workspace} alt="Espace de numérisation Remb∞bine" width={1600} height={1008} className="h-full w-full object-cover" loading="lazy" />
           </div>
           <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-cream px-5 py-4 text-primary shadow-lg md:block">
-            <p className="font-display text-2xl">1080p</p>
-            <p className="text-xs uppercase tracking-widest text-primary/60">Full HD — image par image</p>
+            <p className="font-display text-2xl">1080p Full HD</p>
+            <p className="text-xs uppercase tracking-widest text-primary/60">Image par image</p>
           </div>
         </div>
       </div>
