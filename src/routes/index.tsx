@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Confiez vos bobines Super 8 et 8 mm à un artisan passionné. Numérisation image par image en HD, restauration soignée, livraison sur clé USB ou lien de téléchargement. Vos souvenirs de famille méritent de revivre.",
+          "Confiez vos bobines Super 8 et 8 mm à un artisan passionné. Numérisation image par image en 1080p Full HD, restauration soignée, livraison sur clé USB ou lien de téléchargement. Vos souvenirs de famille méritent de revivre.",
       },
       { property: "og:title", content: "Remb∞bine — Numérisation Super 8 & 8 mm" },
       { property: "og:description", content: "Numérisation artisanale et restauration de films Super 8 et 8 mm. Vos souvenirs de famille, image par image." },
@@ -100,7 +100,7 @@ function Hero() {
           <dl className="mt-10 grid max-w-2xl grid-cols-1 gap-6 border-t border-primary/15 pt-6 text-sm sm:grid-cols-3">
             <div>
               <dt className="text-primary/60">Format</dt>
-              <dd className="mt-1 font-display text-xl text-primary">HD 1080p</dd>
+              <dd className="mt-1 font-display text-xl text-primary">1080p Full HD</dd>
             </div>
             <div>
               <dt className="text-primary/60">Rendu</dt>
@@ -139,7 +139,7 @@ function Hero() {
 function TrustStrip() {
   const items = [
     "Manipulation soigneuse",
-    "Rendu HD image par image",
+    "Rendu 1080p Full HD image par image",
     "Clé USB ou lien de téléchargement",
     "Échange en mains propres ou envoi suivi",
     "Devis gratuit sous 24h",
@@ -273,7 +273,7 @@ function Process() {
 function Benefits() {
   const items = [
     { t: "Manipulation artisanale", d: "Chaque bobine est manipulée avec soin, jamais traitée à la chaîne." },
-    { t: "Numérisation 1080p", d: "Scanner dédié Super 8 & 8 mm, capture image par image en 1080p Full HD." },
+    { t: "Numérisation 1080p Full HD", d: "Scanner dédié Super 8 & 8 mm, capture image par image en 1080p Full HD." },
     { t: "Aucune projection", d: "Nous ne projetons jamais vos films : votre bobine ne subit aucune usure." },
     { t: "Livraison flexible", d: "Lien de téléchargement sécurisé par défaut, clé USB en option, fichier .mp4 universel." },
     { t: "Vos originaux préservés", d: "Bobines rendues étiquetées, prêtes à être rangées avec vos archives." },
@@ -310,7 +310,7 @@ function Pricing() {
       price: "18€",
       per: "/ bobine",
       desc: "Pour tester avant de confier toute votre archive.",
-      features: ["1 à 3 bobines", "HD 1080p (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse", "Clé USB en option"],
+      features: ["1 à 3 bobines", "1080p Full HD (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse", "Clé USB en option"],
       highlight: false,
     },
     {
@@ -320,7 +320,7 @@ function Pricing() {
       desc: "La formule la plus choisie.",
       features: [
         "4 à 15 bobines",
-        "HD 1080p",
+        "1080p Full HD",
         "Lien de téléchargement sécurisé",
         "Clé USB en option",
         "Réponse prioritaire sous 12h",
@@ -334,7 +334,7 @@ function Pricing() {
       desc: "Grandes archives ou fonds associatifs.",
       features: [
         "16 bobines et plus",
-        "HD 1080p (.mp4)",
+        "1080p Full HD (.mp4)",
         "Lien de téléchargement sécurisé",
         "Clé USB en option",
         "Suivi personnalisé",
