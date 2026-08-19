@@ -11,7 +11,7 @@ const items = [
   { q: "Corrigez-vous les couleurs ?", a: "Oui, un étalonnage doux est inclus. Nous respectons l'esprit d'origine — le grain Super 8 reste, les couleurs redeviennent justes." },
   { q: "Que se passe-t-il si une bobine est trop abîmée ?", a: "Nous vous prévenons immédiatement, avec photos à l'appui. Aucune restauration lourde n'est engagée sans votre accord écrit." },
   { q: "Sur quel support recevrai-je le rendu ?", a: "Par défaut, un lien de téléchargement sécurisé valable 30 jours. Sur demande, vous pouvez aussi recevoir vos fichiers sur clé USB en option." },
-  { q: "Combien coûte la numérisation ?", a: "À partir de 22€ par bobine dans la formule Famille. Le tarif final dépend du volume, de la durée totale et du niveau de restauration. Voir la page Tarifs." },
+  { q: "Combien coûte la numérisation ?", a: "À partir de 15€ par bobine dans la formule Famille. Le tarif varie selon la taille des bobines. Voir la page Tarifs pour un ordre d'idée — le devis est gratuit et sans engagement." },
   { q: "Quelle est la différence entre Super 8 et 8 mm ?", a: "La taille des perforations et donc de l'image. Le Super 8 (post-1965) offre une image plus grande et plus détaillée." },
   { q: "Où êtes-vous situés ?", a: "Nous travaillons depuis la France et acceptons les envois de toute l'Europe. Rencontres en mains propres possibles sur rendez-vous." },
   { q: "Puis-je récupérer mes bobines originales ?", a: "Bien sûr, elles vous sont toujours rendues, étiquetées et prêtes à être rangées avec vos archives." },
