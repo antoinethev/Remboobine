@@ -525,12 +525,47 @@ function ContactCTA() {
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setError(null);
+    setSubmitting(true);
+
+    const form = e.currentTarget;
+    const formId = import.meta.env.VITE_FORMSPREE_FORM_ID;
+
+    if (!formId) {
+      setError("Configuration email manquante. Veuillez contacter l'administrateur.");
+      setSubmitting(false);
+      return;
+    }
+
+    try {
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form),
+      });
+
+      if (response.ok) {
+        setSent(true);
+        form.reset();
+      } else {
+        const data = await response.json().catch(() => ({}));
+        setError(data.error || "Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
+      }
+    } catch {
+      setError("Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSent(true);
-      }}
+      onSubmit={handleSubmit}
       className="rounded-3xl border border-cream/15 bg-cream/5 p-8 backdrop-blur"
     >
       {sent ? (
@@ -547,10 +582,14 @@ export function ContactForm() {
           <Field label="Email" name="email" type="email" />
           <Field label="Téléphone" name="tel" type="tel" />
           <div>
-            <label className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
+            <label htmlFor="taille_bobines" className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
               Taille des bobines
             </label>
-            <select className="w-full rounded-lg border border-cream/20 bg-transparent px-4 py-3 text-cream focus:border-coral focus:outline-none">
+            <select
+              id="taille_bobines"
+              name="taille_bobines"
+              className="w-full rounded-lg border border-cream/20 bg-transparent px-4 py-3 text-cream focus:border-coral focus:outline-none"
+            >
               <option className="bg-primary">Petites (7,5 cm / ~15 m)</option>
               <option className="bg-primary">Moyennes (12 cm / ~60 m)</option>
               <option className="bg-primary">Grandes (18 cm / ~120 m)</option>
@@ -559,10 +598,14 @@ export function ContactForm() {
             </select>
           </div>
           <div>
-            <label className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
+            <label htmlFor="nombre_bobines" className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
               Nombre approximatif de bobines
             </label>
-            <select className="w-full rounded-lg border border-cream/20 bg-transparent px-4 py-3 text-cream focus:border-coral focus:outline-none">
+            <select
+              id="nombre_bobines"
+              name="nombre_bobines"
+              className="w-full rounded-lg border border-cream/20 bg-transparent px-4 py-3 text-cream focus:border-coral focus:outline-none"
+            >
               <option className="bg-primary">1 à 3</option>
               <option className="bg-primary">4 à 10</option>
               <option className="bg-primary">11 à 20</option>
@@ -571,21 +614,26 @@ export function ContactForm() {
             </select>
           </div>
           <div>
-            <label className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
+            <label htmlFor="message" className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-cream/70">
               Votre message
             </label>
             <textarea
+              id="message"
+              name="message"
               rows={4}
               className="w-full rounded-lg border border-cream/20 bg-transparent px-4 py-3 text-cream focus:border-coral focus:outline-none"
               placeholder="Racontez-nous votre projet, l'état des bobines, ce que vous aimeriez retrouver…"
             />
           </div>
+          <input type="hidden" name="_subject" value="Nouvelle demande de devis — Remb∞bine" />
           <button
             type="submit"
-            className="w-full rounded-full bg-coral px-6 py-4 font-semibold text-cream transition hover:bg-cream hover:text-primary"
+            disabled={submitting}
+            className="w-full rounded-full bg-coral px-6 py-4 font-semibold text-cream transition hover:bg-cream hover:text-primary disabled:cursor-not-allowed disabled:opacity-60"
           >
-            Envoyer ma demande
+            {submitting ? "Envoi en cours…" : "Envoyer ma demande"}
           </button>
+          {error && <p className="text-center text-sm text-coral">{error}</p>}
           <p className="text-center text-xs text-cream/50">
             Réponse sous 24h. Aucune information n'est partagée.
           </p>
