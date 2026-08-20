@@ -13,7 +13,7 @@ const items = [
   { q: "Sur quel support recevrai-je le rendu ?", a: "Par défaut, un lien de téléchargement sécurisé valable 30 jours. Sur demande, vous pouvez aussi recevoir vos fichiers sur clé USB en option." },
   { q: "Combien coûte la numérisation ?", a: "À partir de 15€ par bobine dans la formule Famille. Le tarif varie selon la taille des bobines. Voir la page Tarifs pour un ordre d'idée — le devis est gratuit et sans engagement." },
   { q: "Quelle est la différence entre Super 8 et 8 mm ?", a: "La taille des perforations et donc de l'image. Le Super 8 (post-1965) offre une image plus grande et plus détaillée." },
-  { q: "Où êtes-vous situés ?", a: "Nous travaillons depuis la France et acceptons les envois de toute l'Europe. Rencontres en mains propres possibles sur rendez-vous." },
+  { q: "Où êtes-vous situés ?", a: "Nous travaillons depuis la région Parisienne et acceptons les envois de toute l'Europe. Rencontres en mains propres possibles sur rendez-vous." },
   { q: "Puis-je récupérer mes bobines originales ?", a: "Bien sûr, elles vous sont toujours rendues, étiquetées et prêtes à être rangées avec vos archives." },
 ];
 
