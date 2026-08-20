@@ -31,7 +31,7 @@ function ProcessPage() {
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-[1.1fr_1fr]">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Le processus</p>
-          <h1 className="mt-3 font-display text-5xl font-semibold text-primary">Un artisanat, pas une chaîne.</h1>
+          <h1 className="mt-3 font-display text-5xl font-semibold text-primary">5 étapes pour restaurer vos souvenirs</h1>
           <p className="mt-5 text-lg text-primary/75">
             Chaque bobine passe entre nos mains à cinq étapes distinctes. Rien n'est automatisé,
             rien n'est traité en masse. Voici comment nous travaillons.
