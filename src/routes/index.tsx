@@ -320,7 +320,7 @@ function Pricing() {
       desc: "La formule la plus choisie.",
       features: [
         "4 à 15 bobines",
-        "1080p Full HD",
+        "1080p Full HD (.mp4)",
         "Lien de téléchargement sécurisé",
         "Clé USB en option",
         "Réponse prioritaire sous 12h",
