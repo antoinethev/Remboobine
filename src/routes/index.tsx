@@ -286,7 +286,7 @@ function Benefits() {
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Nos garanties</p>
           <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
-            Un travail que je ne confierais à personne d'autre.
+            Un travail soigné et sans prise de tête.
           </h2>
         </div>
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
