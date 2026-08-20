@@ -244,7 +244,7 @@ function Process() {
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Notre processus</p>
           <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
-            Cinq étapes, aucune approximation.
+            5 étapes pour restaurer vos souvenirs
           </h2>
         </div>
         <img src={workspace} alt="Espace de travail de numérisation Super 8" width={1600} height={1008} className="hidden h-40 w-72 rounded-2xl object-cover md:block" loading="lazy" />
