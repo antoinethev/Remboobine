@@ -310,7 +310,7 @@ function Pricing() {
       price: "18€",
       per: "/ bobine",
       desc: "Pour tester avant de confier toute votre archive.",
-      features: ["1 à 3 bobines", "1080p Full HD (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse", "Clé USB en option"],
+      features: ["1 à 3 bobines", "1080p Full HD (.mp4)", "Lien de téléchargement sécurisé", "Clé USB en option"],
       highlight: false,
     },
     {
