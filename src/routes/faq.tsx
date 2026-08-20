@@ -9,7 +9,7 @@ const items = [
   { q: "Projetez-vous mes films ?", a: "Jamais. La projection use la bobine et peut même la rayer. Nous utilisons un banc image par image : la pellicule défile lentement devant un capteur haute définition, sans friction." },
   { q: "Quelle résolution finale ?", a: "1080p Full HD, en fichier .mp4 universel. Idéal pour visionner sur TV, tablette et ordinateur, et pour partager avec la famille." },
   { q: "Corrigez-vous les couleurs ?", a: "Oui, un étalonnage doux est inclus. Nous respectons l'esprit d'origine — le grain Super 8 reste, les couleurs redeviennent justes." },
-  { q: "Que se passe-t-il si une bobine est trop abîmée ?", a: "Nous vous prévenons immédiatement, avec photos à l'appui. Aucune restauration lourde n'est engagée sans votre accord écrit." },
+  { q: "Que se passe-t-il si une bobine est trop abîmée ?", a: "Nous ferons tout ce nous pourrons pour restaurer les bobines endommagés. Cependant en cas d'échec le tarif reste le même en raison du temps de travail passé dessus." },
   { q: "Sur quel support recevrai-je le rendu ?", a: "Par défaut, un lien de téléchargement sécurisé valable 30 jours. Sur demande, vous pouvez aussi recevoir vos fichiers sur clé USB en option." },
   { q: "Combien coûte la numérisation ?", a: "À partir de 15€ par bobine dans la formule Famille. Le tarif varie selon la taille des bobines. Voir la page Tarifs pour un ordre d'idée — le devis est gratuit et sans engagement." },
   { q: "Quelle est la différence entre Super 8 et 8 mm ?", a: "La taille des perforations et donc de l'image. Le Super 8 (post-1965) offre une image plus grande et plus détaillée." },
