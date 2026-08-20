@@ -47,11 +47,11 @@ function HomePage() {
       <main>
         <Hero />
         <TrustStrip />
+        <Pricing />
         <WhyDigitize />
         <Approach />
         <Process />
         <Benefits />
-        <Pricing />
         <Testimonials />
         <FaqPreview />
         <ContactCTA />
