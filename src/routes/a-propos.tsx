@@ -28,8 +28,8 @@ function AboutPage() {
             Remb∞bine est né d'un carton oublié dans le grenier de mes grands-parents. Une vingtaine de bobines Super 8 et une envie de découvrir ces films dont j'ignorais le contenu, avant que la pellicule ne se fasse ronger par le temps.
           </p>
           <p className="mt-4 text-primary/75">
-            De cette urgence est venue une passion, puis un métier. Aujourd'hui, nous numérisons image par image
-            les films de familles françaises entières — chaque bobine reçoit le temps et le soin qu'elle mérite.
+            De cette urgence est venue une passion. Aujourd'hui, nous numérisons image par image
+            les films de familles. Chaque bobine reçoit le temps et le soin qu'elle mérite.
             Pas de chaîne industrielle, pas de raccourci. Juste un travail d'artisan, au service de la mémoire.
           </p>
           <div className="mt-10 flex gap-3">
