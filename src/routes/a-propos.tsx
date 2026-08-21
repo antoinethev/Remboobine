@@ -25,7 +25,9 @@ function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Notre histoire</p>
           <h1 className="mt-3 font-display text-5xl font-semibold text-primary">Rendre vivants les souvenirs qu'on croyait perdus.</h1>
           <p className="mt-6 text-lg text-primary/80">
-            Remb∞bine est né d'un carton oublié dans le grenier de mes grands-parents. Une vingtaine de bobines Super 8 et une envie de découvrir ces films dont j'ignorais le contenu, avant que la pellicule ne se fasse ronger par le temps.
+            Remb∞bine est né d'un carton oublié dans le grenier de mes grands-parents. Une vingtaine de bobines Super 8, une envie :&nbsp;
+            <br />
+            Découvrir ces films dont j'ignorais le contenu avant que le temps ne les effacent.
           </p>
           <p className="mt-4 text-primary/75">
             De cette urgence est venue une passion. Aujourd'hui, nous numérisons image par image
