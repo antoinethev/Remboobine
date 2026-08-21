@@ -404,9 +404,9 @@ function Pricing() {
 /* ------------------------------ TESTIMONIALS ---------------------------- */
 function Testimonials() {
   const items = [
-    { q: "J'ai revu mon père jeune, en mouvement, pour la première fois depuis 40 ans. Je n'ai pas de mots.", a: "Camille, Lyon" },
-    { q: "Travail d'orfèvre. Les couleurs sont magnifiques, on retrouve tout le charme des vieux 8mm de mes grands-parents.", a: "Étienne, Nantes" },
-    { q: "Communication parfaite du début à la fin. Mes bobines me sont revenues étiquetées et rangées.", a: "Sophie, Bordeaux" },
+    { q: "j'ai l'impression de revivre ma jeunesse. Tout ces souvenirs oubliés, à présent sur mon écran c'est génial !", a: "Denise, Dijon" },
+    { q: "Voir ses grands-parents jeunes c'est exceptionnelle. j'aurais aimé regarder ces films avec eux.", a: "Manon, Paris" },
+    { q: "Communication parfaite du début à la fin. Rapport qualité-prix imbattable. Je recommande.", a: "Laurent, Bordeaux" },
   ];
   return (
     <section className="bg-peach-soft py-24">
