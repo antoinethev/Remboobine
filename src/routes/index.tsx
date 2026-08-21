@@ -436,7 +436,7 @@ export const faqItems = [
   { q: "Quelle est la qualité finale ?", a: "Nous livrons en 1080p Full HD (fichier .mp4 universel), en numérisation image par image. C'est la qualité standard pour visionner vos films sur TV, tablette et ordinateur, et pour les partager avec la famille." },
   { q: "Sur quel support recevrai-je mes films ?", a: "Par défaut, un lien de téléchargement sécurisé valable 30 jours — pratique et immédiat. Sur demande, vous pouvez aussi recevoir vos fichiers sur clé USB en option." },
   { q: "Et si mes bobines sont vraiment abîmées ?", a: "Nous ferons tout ce nous pourrons pour restaurer les bobines endommagés. Cependant en cas d'échec le tarif reste le même en raison du temps de travail passé dessus." },
-  { q: "Puis-je vous rencontrer ?", a: "Oui, l'échange en mains propres est possible en région Parisienne et souvent apprécié. Contactez-nous pour convenir d'un rendez-vous. Sinon, l'envoi en suivi (Colissimo ou Mondial Relay) fonctionne très bien — pensez à conserver votre numéro de suivi." },
+  { q: "Puis-je vous rencontrer ?", a: "Oui, l'échange en mains propres est possible en région Parisienne et souvent apprécié. Contactez-nous pour convenir d'un rendez-vous. Sinon, l'envoi en suivi (Mondial Relay) fonctionne très bien — pensez à conserver votre numéro de suivi." },
 ];
 
 function FaqPreview() {
