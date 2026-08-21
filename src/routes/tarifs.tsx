@@ -22,9 +22,8 @@ const plans = [
 ];
 
 const supplements = [
-  { name: "Bobine très abîmée (réparations multiples de collures)", price: "sur devis" },
-  { name: "Titrage personnalisé et chapitrage", price: "+ 25€ / heure de rendu" },
-  { name: "Envoi retour en suivi (Colissimo)", price: "12€" },
+  { name: "Envoi et retour suivi (Mondial Relay)", price: "10€" },
+  { name: "rendu sur clé USB", price: "10€" },
 ];
 
 function TarifsPage() {
