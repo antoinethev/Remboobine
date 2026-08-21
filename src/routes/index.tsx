@@ -233,7 +233,7 @@ function Approach() {
 function Process() {
   const steps = [
     { t: "Prise de contact", d: "Vous nous décrivez votre projet (nombre de bobines, taille des bobines, format, état). Devis gratuit sous 24h." },
-    { t: "Réception des bobines", d: "Remise en mains propres si possible, sinon envoi suivi (Colissimo, Mondial Relay…). Chaque bobine est numérotée." },
+    { t: "Réception des bobines", d: "Remise en mains propres si possible, sinon envoi suivi (Mondial Relay). Chaque bobine est numérotée." },
     { t: "Numérisation image par image", d: "Capture image par image en 1080p Full HD sur scanner dédié Super 8 / 8 mm. Aucune projection destructrice." },
     { t: "Montage", d: "Correction colorimétrique douce et assemblage des extraits vidéos. Un fichier par bobine agréable à visionner." },
     { t: "Livraison", d: "Lien de téléchargement sécurisé, ou clé USB en option. Vos bobines originales vous sont rendues." },
