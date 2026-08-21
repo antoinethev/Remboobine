@@ -307,7 +307,7 @@ function Pricing() {
   const plans = [
     {
       name: "Découverte",
-      price: "18€",
+      price: "à partir de 18€",
       per: "/ bobine",
       desc: "Pour tester avant de confier toute votre archive.",
       features: ["1 à 3 bobines", "1080p Full HD (.mp4)", "Lien de téléchargement sécurisé", "Clé USB en option"],
@@ -315,7 +315,7 @@ function Pricing() {
     },
     {
       name: "Famille",
-      price: "15€",
+      price: "à partir de 15€",
       per: "/ bobine",
       desc: "La formule la plus choisie.",
       features: [
