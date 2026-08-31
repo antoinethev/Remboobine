@@ -1,5 +1,7 @@
 import { Link, Outlet } from "@tanstack/react-router";
-import type { ReactNode } from "react";
+import { Menu, X } from "lucide-react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+
 
 export function BrandLogo({ className = "" }: { className?: string }) {
   return (
