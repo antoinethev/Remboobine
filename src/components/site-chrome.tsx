@@ -24,6 +24,33 @@ export function Header() {
     { to: "/a-propos", label: "À propos" },
     { to: "/faq", label: "FAQ" },
   ] as const;
+
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileOpen(false);
+    };
+    const onClick = (e: MouseEvent) => {
+      if (panelRef.current && !panelRef.current.contains(e.target as Node)) {
+        setMobileOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onClick);
+    document.body.classList.add("overflow-hidden");
+
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onClick);
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [mobileOpen]);
+
   return (
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
@@ -40,16 +67,58 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Link
-          to="/contact"
-          className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-coral"
-        >
-          Confier mes bobines
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link
+            to="/contact"
+            className="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-coral md:px-5"
+          >
+            Confier mes bobines
+          </Link>
+          <button
+            type="button"
+            onClick={() => setMobileOpen((v) => !v)}
+            aria-expanded={mobileOpen}
+            aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-controls="mobile-nav"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-cream/60 text-primary transition hover:border-coral hover:text-coral md:hidden"
+          >
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
+
+      {mobileOpen && (
+        <div
+          id="mobile-nav"
+          ref={panelRef}
+          className="absolute inset-x-0 top-full border-b border-primary/10 bg-cream/95 shadow-lg backdrop-blur-lg md:hidden"
+        >
+          <nav className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6">
+            {nav.map((n) => (
+              <Link
+                key={n.to}
+                to={n.to}
+                onClick={() => setMobileOpen(false)}
+                className="rounded-xl px-4 py-3 text-lg font-medium text-primary/90 transition hover:bg-primary/5 hover:text-coral"
+                activeProps={{ className: "text-coral bg-primary/5" }}
+              >
+                {n.label}
+              </Link>
+            ))}
+            <Link
+              to="/contact"
+              onClick={() => setMobileOpen(false)}
+              className="mt-2 rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground transition hover:bg-coral"
+            >
+              Confier mes bobines
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
+
 
 export function Footer() {
   return (
