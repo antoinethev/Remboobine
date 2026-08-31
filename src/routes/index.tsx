@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Header, Footer } from "@/components/site-chrome";
 import heroFamily from "@/assets/hero-family.jpg";
+import heroVideo from "@/assets/hero-remboobine.mp4.asset.json";
+
 import reelsMacro from "@/assets/reels-macro.jpg";
 import workspace from "@/assets/workspace.jpg";
 
@@ -114,13 +116,18 @@ function Hero() {
         </div>
         <div className="relative fade-up">
           <div className="relative overflow-hidden rounded-3xl border-[6px] border-cream shadow-[var(--shadow-lift)]">
-            <img
-              src={heroFamily}
-              alt="Image d'archive d'une famille des années 1970 capturée sur film Super 8"
-              width={1600}
-              height={1200}
-              className="h-full w-full object-cover"
+            <video
+              src={heroVideo.url}
+              poster={heroFamily}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label="Extrait de film de famille Super 8 numérisé en 1080p Full HD"
+              className="aspect-[4/3] h-full w-full object-cover"
             />
+
             <div className="grain pointer-events-none absolute inset-0 flicker" />
             <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-primary/10" />
           </div>
