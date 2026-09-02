@@ -48,7 +48,7 @@ function HomePage() {
       <Header />
       <main>
         <Hero />
-        <TrustStrip />
+        <Transition />
         <Pricing />
         <WhyDigitize />
         <Approach />
@@ -137,29 +137,16 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="sprockets h-6 border-y border-primary/20 bg-primary/5" />
     </section>
   );
 }
 
-/* --------------------------- TRUST STRIP -------------------------------- */
-function TrustStrip() {
-  const items = [
-    "Manipulation soigneuse",
-    "Rendu 1080p Full HD image par image",
-    "Clé USB ou lien de téléchargement",
-    "Échange en mains propres ou envoi suivi",
-    "Devis gratuit sous 24h",
-  ];
+/* --------------------------- TRANSITION --------------------------------- */
+function Transition() {
   return (
-    <div className="border-b border-primary/10 bg-peach-soft">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-10 gap-y-3 px-6 py-5 text-xs font-medium uppercase tracking-[0.18em] text-primary/70">
-        {items.map((t) => (
-          <span key={t} className="flex items-center gap-2">
-            <span aria-hidden className="h-1 w-1 rounded-full bg-coral" /> {t}
-          </span>
-        ))}
-      </div>
+    <div className="relative h-20 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-peach-soft/70 to-background" />
+      <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-primary/10 to-transparent" />
     </div>
   );
 }
