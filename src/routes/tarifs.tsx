@@ -16,7 +16,7 @@ export const Route = createFileRoute("/tarifs")({
 });
 
 const plans = [
-  { name: "Découverte", price: "à partir de 18€", per: "/ bobine", desc: "Pour tester avant de confier toute votre archive.", features: ["1 à 3 bobines", "1080p Full HD (.mp4)", "Lien de téléchargement sécurisé", "Inspection incluse", "Clé USB en option"], highlight: false },
+  { name: "Découverte", price: "à partir de 18€", per: "/ bobine", desc: "Pour tester avant de confier toute votre archive.", features: ["1 à 3 bobines", "1080p Full HD (.mp4)", "Lien de téléchargement sécurisé", "Clé USB en option"], highlight: false },
   { name: "Famille", price: "à partir de 15€", per: "/ bobine", desc: "La formule la plus choisie.", features: ["4 à 15 bobines", "1080p Full HD (.mp4)", "Lien de téléchargement sécurisé", "Clé USB en option", "Réponse prioritaire sous 12h"], highlight: true },
   { name: "Patrimoine", price: "sur devis", per: "", desc: "Grandes archives ou fonds associatifs.", features: ["16 bobines et plus", "1080p Full HD (.mp4)", "Lien de téléchargement sécurisé", "Clé USB en option", "Suivi personnalisé"], highlight: false },
 ];
