@@ -74,7 +74,7 @@ function Hero() {
       />
       <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 pt-16 md:grid-cols-[1.35fr_1fr] md:gap-16 md:pb-24 md:pt-20">
         <div className="fade-up flex flex-col justify-center">
-          <p className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-cream/60 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-primary">
+          <p className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-cream/60 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-primary sm:px-4 sm:text-xs sm:tracking-[0.18em]">
             <span className="h-1.5 w-1.5 rounded-full bg-coral" /> Atelier de numérisation Super 8 · 8 mm
           </p>
           <h1 className="font-display text-[clamp(2.5rem,6vw,4.75rem)] font-semibold leading-[1.02] text-primary">
