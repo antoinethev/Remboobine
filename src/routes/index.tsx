@@ -48,7 +48,6 @@ function HomePage() {
       <Header />
       <main>
         <Hero />
-        <Transition />
         <Pricing />
         <WhyDigitize />
         <Approach />
@@ -72,7 +71,7 @@ function Hero() {
         className="absolute inset-0 -z-10"
         style={{ background: "var(--gradient-warm)" }}
       />
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 pt-16 md:grid-cols-[1.35fr_1fr] md:gap-16 md:pb-24 md:pt-20">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-10 pt-16 md:grid-cols-[1.35fr_1fr] md:gap-16 md:pb-14 md:pt-20">
         <div className="fade-up flex flex-col justify-center">
           <p className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-cream/60 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-primary sm:px-4 sm:text-xs sm:tracking-[0.18em]">
             <span className="h-1.5 w-1.5 rounded-full bg-coral" /> Atelier de numérisation Super 8 · 8 mm
@@ -141,15 +140,6 @@ function Hero() {
   );
 }
 
-/* --------------------------- TRANSITION --------------------------------- */
-function Transition() {
-  return (
-    <div className="relative h-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-peach-soft/70 to-background" />
-      <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-primary/10 to-transparent" />
-    </div>
-  );
-}
 
 /* --------------------------- WHY DIGITIZE ------------------------------- */
 function WhyDigitize() {
@@ -338,7 +328,7 @@ function Pricing() {
 
   ];
   return (
-    <section id="tarifs" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="tarifs" className="mx-auto max-w-7xl px-6 pb-24 pt-10 md:pt-14">
       <div className="mb-14 max-w-2xl">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Tarifs</p>
         <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
