@@ -380,9 +380,9 @@ function Pricing() {
             )}
             <h3 className="font-display text-2xl text-primary">{p.name}</h3>
             <p className="mt-2 text-sm text-primary/60">{p.desc}</p>
-            <div className="mt-6 flex items-baseline gap-1">
+            <div className="mt-6 flex flex-wrap items-baseline gap-1">
               <span className="font-display text-4xl text-primary">{p.price}</span>
-              <span className="text-sm text-primary/60">{p.per}</span>
+              <span className="whitespace-nowrap text-sm text-primary/60">{p.per}</span>
             </div>
             <ul className="mt-6 flex-1 space-y-2 text-sm text-primary/80">
               {p.features.map((f) => (

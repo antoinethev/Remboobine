@@ -43,9 +43,9 @@ function TarifsPage() {
               {p.highlight && <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-coral px-4 py-1 text-[10px] font-semibold uppercase tracking-widest text-cream">Le plus choisi</span>}
               <h2 className="font-display text-2xl text-primary">{p.name}</h2>
               <p className="mt-2 text-sm text-primary/60">{p.desc}</p>
-              <div className="mt-6 flex items-baseline gap-1">
+              <div className="mt-6 flex flex-wrap items-baseline gap-1">
                 <span className="font-display text-4xl text-primary">{p.price}</span>
-                <span className="text-sm text-primary/60">{p.per}</span>
+                <span className="whitespace-nowrap text-sm text-primary/60">{p.per}</span>
               </div>
               <ul className="mt-6 flex-1 space-y-2 text-sm text-primary/80">
                 {p.features.map((f) => <li key={f} className="flex gap-2"><span className="text-coral">✓</span> {f}</li>)}
