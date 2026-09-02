@@ -70,7 +70,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             to="/contact"
-            className="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-coral md:px-5"
+            className="rounded-full bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition hover:bg-coral md:px-4 md:py-2 md:text-sm"
           >
             Confier mes bobines
           </Link>
