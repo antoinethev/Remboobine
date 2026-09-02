@@ -77,7 +77,9 @@ function Hero() {
             <span className="h-1.5 w-1.5 rounded-full bg-coral" /> Atelier de numérisation Super 8 · 8 mm
           </p>
           <h1 className="font-display text-[clamp(2.5rem,6vw,4.75rem)] font-semibold leading-[1.02] text-primary">
-            Ces bobines attendent depuis 50 ans.
+            Ces bobines attendent
+            <br />
+            depuis 50 ans.
             <span className="mt-2 block italic text-coral">Il est temps.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-primary/80">
