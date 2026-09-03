@@ -125,7 +125,7 @@ function Hero() {
               playsInline
               preload="metadata"
               aria-label="Extrait de film de famille Super 8 numérisé en 1080p Full HD"
-              className="aspect-[4/3] h-full w-full object-cover md:aspect-[3/4]"
+              className="aspect-[4/3] h-full w-full object-cover"
             />
 
             <div className="grain pointer-events-none absolute inset-0 flicker" />
