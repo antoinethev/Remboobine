@@ -150,7 +150,7 @@ function WhyDigitize() {
     { title: "Rien ne remplace ces images", body: "La voix, les gestes, les sourires : ce sont les seuls films de vos parents ou grands-parents. Ils méritent d'être vus." },
   ];
   return (
-    <section id="pourquoi" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="pourquoi" className="mx-auto max-w-7xl px-6 pt-12 pb-24">
       <div className="max-w-3xl">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Pourquoi maintenant</p>
         <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
@@ -329,7 +329,7 @@ function Pricing() {
 
   ];
   return (
-    <section id="tarifs" className="mx-auto max-w-7xl px-6 pb-24 pt-10 md:pt-14">
+    <section id="tarifs" className="mx-auto max-w-7xl px-6 pb-10 pt-10 md:pt-14">
       <div className="mb-14 max-w-2xl">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-coral">Tarifs</p>
         <h2 className="mt-3 font-display text-4xl font-semibold text-primary md:text-5xl">
