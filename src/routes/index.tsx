@@ -99,7 +99,7 @@ function Hero() {
               Voir le processus →
             </Link>
           </div>
-          <dl className="mt-10 grid max-w-2xl grid-cols-1 gap-6 border-t border-primary/15 pt-6 text-sm sm:grid-cols-3">
+          <dl className="mt-10 grid w-full grid-cols-1 gap-6 rounded-2xl border border-primary/10 bg-cream/50 p-6 text-sm sm:grid-cols-3">
             <div>
               <dt className="text-primary/60">Format</dt>
               <dd className="mt-1 font-display text-xl text-primary">1080p Full HD</dd>
