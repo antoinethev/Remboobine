@@ -76,10 +76,9 @@ function Hero() {
           <p className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-cream/60 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-primary sm:px-4 sm:text-xs sm:tracking-[0.18em]">
             <span className="h-1.5 w-1.5 rounded-full bg-coral" /> Atelier de numérisation Super 8 · 8 mm
           </p>
-          <h1 className="font-display text-[clamp(2.5rem,6vw,4.75rem)] font-semibold leading-[1.02] text-primary">
-            Ces bobines attendent
-            <br />
-            depuis 50 ans.
+          <h1 className="font-display text-[2.1rem] font-semibold leading-[1.05] text-primary sm:text-[2.75rem] md:text-[3.5rem] lg:text-[clamp(3rem,6vw,4.75rem)]">
+            <span className="block">Ces bobines attendent</span>
+            <span className="block">depuis 50 ans.</span>
             <span className="mt-2 block italic text-coral">Il est temps.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-primary/80">
