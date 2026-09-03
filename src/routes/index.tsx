@@ -71,7 +71,7 @@ function Hero() {
         className="absolute inset-0 -z-10"
         style={{ background: "var(--gradient-warm)" }}
       />
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-10 pt-16 md:grid-cols-[1.35fr_1fr] md:gap-16 md:pb-14 md:pt-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-10 pt-16 md:grid-cols-[1.1fr_1fr] md:gap-12 md:pb-14 md:pt-20">
         <div className="fade-up flex flex-col justify-center">
           <p className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-cream/60 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-primary sm:px-4 sm:text-xs sm:tracking-[0.18em]">
             <span className="h-1.5 w-1.5 rounded-full bg-coral" /> Atelier de numérisation Super 8 · 8 mm
@@ -125,15 +125,15 @@ function Hero() {
               playsInline
               preload="metadata"
               aria-label="Extrait de film de famille Super 8 numérisé en 1080p Full HD"
-              className="aspect-[4/3] h-full w-full object-cover"
+              className="aspect-[4/3] h-full w-full object-cover md:aspect-[3/4]"
             />
 
             <div className="grain pointer-events-none absolute inset-0 flicker" />
             <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-primary/10" />
           </div>
-          <div className="absolute -right-4 -top-4 hidden rounded-2xl bg-cream/90 px-4 py-3 text-xs shadow-lg backdrop-blur md:block">
-            <p className="font-display text-lg text-primary">« Revoir ses parents jeunes, c'est exceptionnelle... »</p>
-            <p className="mt-1 text-primary/60">— Camille, Lyon</p>
+          <div className="absolute -bottom-4 -right-4 hidden max-w-[280px] rounded-2xl bg-cream/90 px-4 py-3 text-xs shadow-lg backdrop-blur md:block">
+            <p className="font-display text-lg text-primary">« Voir ses grands-parents jeunes, c'est exceptionnelle... »</p>
+            <p className="mt-1 text-primary/60">— Manon, Paris</p>
           </div>
         </div>
       </div>
