@@ -71,7 +71,7 @@ function Hero() {
         className="absolute inset-0 -z-10"
         style={{ background: "var(--gradient-warm)" }}
       />
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-10 pt-16 md:grid-cols-[1.1fr_1fr] md:gap-12 md:pb-14 md:pt-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-6 pt-16 md:grid-cols-[1.1fr_1fr] md:gap-12 md:pb-8 md:pt-20">
         <div className="fade-up flex flex-col justify-center">
           <p className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-cream/60 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-primary sm:px-4 sm:text-xs sm:tracking-[0.18em]">
             <span className="h-1.5 w-1.5 rounded-full bg-coral" /> Atelier de numérisation Super 8 · 8 mm
@@ -99,20 +99,6 @@ function Hero() {
               Voir le processus →
             </Link>
           </div>
-          <dl className="mt-10 grid w-full grid-cols-1 gap-6 rounded-2xl border border-primary/10 bg-cream/50 p-6 text-sm sm:grid-cols-3">
-            <div>
-              <dt className="text-primary/60">Format</dt>
-              <dd className="mt-1 font-display text-xl text-primary">1080p Full HD</dd>
-            </div>
-            <div>
-              <dt className="text-primary/60">Rendu</dt>
-              <dd className="mt-1 font-display text-xl text-primary">Lien de téléchargement ou clé USB</dd>
-            </div>
-            <div>
-              <dt className="text-primary/60">Délai moyen</dt>
-              <dd className="mt-1 font-display text-xl text-primary">10 jours</dd>
-            </div>
-          </dl>
         </div>
         <div className="relative fade-up">
           <div className="relative overflow-hidden rounded-3xl border-[6px] border-cream shadow-[var(--shadow-lift)]">
@@ -136,6 +122,22 @@ function Hero() {
             <p className="mt-1 text-primary/60">— Manon, Paris</p>
           </div>
         </div>
+      </div>
+      <div className="mx-auto max-w-7xl px-6 pb-10 md:pb-14">
+        <dl className="grid grid-cols-1 gap-6 rounded-2xl border border-primary/10 bg-cream/50 p-6 text-sm sm:grid-cols-3 md:p-8">
+          <div>
+            <dt className="text-primary/60">Format</dt>
+            <dd className="mt-1 font-display text-xl text-primary">1080p Full HD</dd>
+          </div>
+          <div>
+            <dt className="text-primary/60">Rendu</dt>
+            <dd className="mt-1 font-display text-xl text-primary">Lien de téléchargement ou clé USB</dd>
+          </div>
+          <div>
+            <dt className="text-primary/60">Délai moyen</dt>
+            <dd className="mt-1 font-display text-xl text-primary">10 jours</dd>
+          </div>
+        </dl>
       </div>
     </section>
   );
