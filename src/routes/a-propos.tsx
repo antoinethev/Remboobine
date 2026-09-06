@@ -30,9 +30,7 @@ function AboutPage() {
             Découvrir ces films dont j'ignorais le contenu avant que le temps ne les effacent.
           </p>
           <p className="mt-4 text-primary/75">
-            De cette urgence est venue une passion. Aujourd'hui, nous numérisons image par image
-            les films de familles. Chaque bobine reçoit le temps et le soin qu'elle mérite.
-            Pas de chaîne industrielle, pas de raccourci. Juste un travail d'artisan, au service de la mémoire.
+             De cette urgence est venue une passion. Aujourd'hui, nous numérisons image par image les films de familles et autres. Chaque bobine reçoit le temps et le soin qu'elle mérite. 
           </p>
           <div className="mt-10 flex gap-3">
             <Link to="/contact" className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-coral">Nous confier vos bobines</Link>
