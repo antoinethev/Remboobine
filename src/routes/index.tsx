@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Header, Footer } from "@/components/site-chrome";
 import heroFamily from "@/assets/hero-family.jpg";
-import heroVideo from "@/assets/hero-remboobine.mp4.asset.json";
 
 import reelsMacro from "@/assets/reels-macro.jpg";
 import workspace from "@/assets/workspace.jpg";
@@ -103,7 +102,7 @@ function Hero() {
         <div className="relative fade-up">
           <div className="relative overflow-hidden rounded-3xl border-[6px] border-cream shadow-[var(--shadow-lift)]">
             <video
-              src={heroVideo.url}
+              src="/hero-remboobine.mp4"
               poster={heroFamily}
               autoPlay
               muted
