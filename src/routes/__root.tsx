@@ -85,6 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Remb∞bine" },
       { name: "theme-color", content: "#f4c99a" },
+      { name: "google-site-verification", content: "TrnBexy8wp_m1QJ91fxTa2Dwc9wcbd1BKdcgckxHi8o" },
       { property: "og:site_name", content: "Remb∞bine" },
       { property: "og:title", content: "Remb∞bine — Numérisation Super 8 & 8 mm" },
       { property: "og:description", content: "Numérisation artisanale de films Super 8 et 8 mm. Vos souvenirs de famille, image par image." },
