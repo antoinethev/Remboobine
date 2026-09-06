@@ -118,8 +118,8 @@ function Hero() {
             <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-primary/10" />
           </div>
           <div className="absolute -bottom-4 -right-4 hidden max-w-[280px] rounded-2xl bg-cream/90 px-4 py-3 text-xs shadow-lg backdrop-blur md:block">
-            <p className="font-display text-lg text-primary">« Voir ses grands-parents jeunes, c'est exceptionnelle... »</p>
-            <p className="mt-1 text-primary/60">— Manon, Paris</p>
+            <p className="font-display text-lg text-primary">« Voir ses parents jeunes, c'est exceptionnelle... »</p>
+            <p className="mt-1 text-primary/60"></p>
           </div>
         </div>
       </div>
