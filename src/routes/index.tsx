@@ -149,7 +149,7 @@ function WhyDigitize() {
   const items = [
     { title: "Le temps abîme", body: "Chaque année, la pellicule vieillit. Syndrome du vinaigre, moisissures, décoloration : après 50 ans, le compte à rebours est lancé." },
     { title: "Les projecteurs disparaissent", body: "Les appareils fiables se font rares. Une seule mauvaise projection peut rayer définitivement un film." },
-    { title: "Rien ne remplace ces images", body: "La voix, les gestes, les sourires : ce sont les seuls films de vos parents ou grands-parents. Ils méritent d'être vus." },
+    { title: "Rien ne remplace ces images", body: "Ces images, ces gestes, ces sourires : ce sont les seuls films de vos parents ou grands-parents. Ils méritent d'être vus." },
   ];
   return (
     <section id="pourquoi" className="mx-auto max-w-7xl px-6 pt-12 pb-24">
