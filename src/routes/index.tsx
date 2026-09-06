@@ -609,7 +609,7 @@ export function ContactForm() {
               name="message"
               rows={4}
               className="w-full rounded-lg border border-cream/20 bg-transparent px-4 py-3 text-cream focus:border-coral focus:outline-none"
-              placeholder="Racontez-nous votre projet, l'état des bobines, ce que vous aimeriez retrouver…"
+              placeholder="Racontez-nous votre projet, le nombre et la taille (diamètre) de vos bobines, ce que vous aimeriez retrouver…"
             />
           </div>
           <input type="hidden" name="_subject" value="Nouvelle demande de devis — Remb∞bine" />
