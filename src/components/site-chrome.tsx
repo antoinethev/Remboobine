@@ -147,12 +147,15 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-primary/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-primary/60 md:flex-row">
-          <p>© {new Date().getFullYear()} Remb∞bine — Numérisation Super 8 & 8 mm. Fait avec soin en France.</p>
-          <Link to="/mentions-legales" className="hover:text-coral">Mentions légales</Link>
-        </div>
-      </div>
+     <div className="border-t border-primary/10">
+  <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-primary/60 md:flex-row">
+    <p>© {new Date().getFullYear()} Remb∞bine — Numérisation Super 8 & 8 mm. Fait avec soin en France.</p>
+    <div className="flex gap-4">
+      <Link to="/mentions-legales" className="hover:text-coral">Mentions légales</Link>
+      <Link to="/politique-de-confidentialite" className="hover:text-coral">Politique de confidentialité</Link>
+    </div>
+  </div>
+</div>
     </footer>
   );
 }
