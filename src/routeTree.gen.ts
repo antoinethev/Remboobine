@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TarifsRouteImport } from './routes/tarifs'
 import { Route as ProcessusRouteImport } from './routes/processus'
+import { Route as PolitiqueDeConfidentialiteRouteImport } from './routes/politique-de-confidentialite'
 import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -27,6 +28,12 @@ const ProcessusRoute = ProcessusRouteImport.update({
   path: '/processus',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PolitiqueDeConfidentialiteRoute =
+  PolitiqueDeConfidentialiteRouteImport.update({
+    id: '/politique-de-confidentialite',
+    path: '/politique-de-confidentialite',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
   id: '/mentions-legales',
   path: '/mentions-legales',
@@ -59,6 +66,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/politique-de-confidentialite': typeof PolitiqueDeConfidentialiteRoute
   '/processus': typeof ProcessusRoute
   '/tarifs': typeof TarifsRoute
 }
@@ -68,6 +76,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/politique-de-confidentialite': typeof PolitiqueDeConfidentialiteRoute
   '/processus': typeof ProcessusRoute
   '/tarifs': typeof TarifsRoute
 }
@@ -78,6 +87,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/politique-de-confidentialite': typeof PolitiqueDeConfidentialiteRoute
   '/processus': typeof ProcessusRoute
   '/tarifs': typeof TarifsRoute
 }
@@ -89,6 +99,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/mentions-legales'
+    | '/politique-de-confidentialite'
     | '/processus'
     | '/tarifs'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +109,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/mentions-legales'
+    | '/politique-de-confidentialite'
     | '/processus'
     | '/tarifs'
   id:
@@ -107,6 +119,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/mentions-legales'
+    | '/politique-de-confidentialite'
     | '/processus'
     | '/tarifs'
   fileRoutesById: FileRoutesById
@@ -117,6 +130,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   FaqRoute: typeof FaqRoute
   MentionsLegalesRoute: typeof MentionsLegalesRoute
+  PolitiqueDeConfidentialiteRoute: typeof PolitiqueDeConfidentialiteRoute
   ProcessusRoute: typeof ProcessusRoute
   TarifsRoute: typeof TarifsRoute
 }
@@ -135,6 +149,13 @@ declare module '@tanstack/react-router' {
       path: '/processus'
       fullPath: '/processus'
       preLoaderRoute: typeof ProcessusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politique-de-confidentialite': {
+      id: '/politique-de-confidentialite'
+      path: '/politique-de-confidentialite'
+      fullPath: '/politique-de-confidentialite'
+      preLoaderRoute: typeof PolitiqueDeConfidentialiteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mentions-legales': {
@@ -181,6 +202,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FaqRoute: FaqRoute,
   MentionsLegalesRoute: MentionsLegalesRoute,
+  PolitiqueDeConfidentialiteRoute: PolitiqueDeConfidentialiteRoute,
   ProcessusRoute: ProcessusRoute,
   TarifsRoute: TarifsRoute,
 }
