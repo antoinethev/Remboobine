@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Header, Footer } from "@/components/site-chrome";
-import heroFamily from "@/assets/hero-family.jpg";
+import heroPoster from "@/assets/hero-poster.jpg";
 
 import reelsMacro from "@/assets/reels-macro.jpg";
 import workspace from "@/assets/workspace.jpg";
@@ -103,12 +103,12 @@ function Hero() {
           <div className="relative overflow-hidden rounded-3xl border-[6px] border-cream shadow-[var(--shadow-lift)]">
             <video
               src="/hero-remboobine.mp4"
-              poster={heroFamily}
+              poster={heroPoster}
               autoPlay
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="auto"
               aria-label="Extrait de film de famille Super 8 numérisé en 1080p Full HD"
               className="aspect-[4/3] h-full w-full object-cover"
             />
